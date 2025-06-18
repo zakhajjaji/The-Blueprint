@@ -1,10 +1,19 @@
 import Image from "next/image";
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
 import About from "@/components/About"; 
 import ThemeToggle from "@/components/ThemeToggle";
 import Nav from "@/components/Nav";
+import Contact from "@/components/Contact";
+import { Projects } from "@/components/Projects";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/card"
 
 
 export default function Home() {
@@ -14,6 +23,13 @@ export default function Home() {
   <Nav />
 <Hero />
 <About />
+<Projects />
+{/* Project section : card, badege, button */}
+{/* Tech stack: card, chat for each langauge */}
+{/* */}
+<Contact />
+{/* Social Links section */}
+
 </main>
     </div>
   );
