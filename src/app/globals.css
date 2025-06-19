@@ -145,3 +145,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}

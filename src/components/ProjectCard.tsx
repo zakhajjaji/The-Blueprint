@@ -29,7 +29,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
     
     <CardFooter className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between p-4 border-t border-border">
       <div className="flex items-center justify-between w-full sm:w-auto">
-        <a href={link} className="text-sm font-medium text-primary hover:underline">
+        <a href={link} target='_blank' rel='noopener' className="text-sm font-medium text-primary hover:underline">
           View Project →
         </a>
         {status && (

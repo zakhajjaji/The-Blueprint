@@ -38,15 +38,15 @@ const projects = [
 {
             title: "Mic Drop",
             description: "",
-            link: "https://weather-app-lovat-gamma-72.vercel.app",
+            link: "",
             image: "",
             tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
             status: "in-progress" as "in-progress" 
 },
 {
-    title: "Web Scraper Ai Consulant",
+    title: "SoundSlice",
     description: "",
-    link: "https://weather-app-lovat-gamma-72.vercel.app",
+    link: "https://event-app-liart-eta.vercel.app",
     image: "",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
     status: "in-progress" as "in-progress" 
@@ -54,7 +54,7 @@ const projects = [
 {
     title: "Web Scraper Ai Consulant",
     description: "",
-    link: "https://weather-app-lovat-gamma-72.vercel.app",
+    link: "",
     image: "",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
     status: "in-progress" as "in-progress" 

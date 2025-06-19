@@ -14,6 +14,8 @@ import {
   CardDescription,
   CardFooter,
 } from "@/components/ui/card"
+import SocialTags from "@/components/SocialTags";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -24,10 +26,9 @@ export default function Home() {
 <Hero />
 <About />
 <Projects />
-{/* Project section : card, badege, button */}
-{/* Tech stack: card, chat for each langauge */}
-{/* */}
 <Contact />
+<SocialTags />
+<Footer />
 {/* Social Links section */}
 
 </main>
