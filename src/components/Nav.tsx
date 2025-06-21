@@ -18,6 +18,7 @@ export default function Nav() {
           alt="Zak Blueprint Logo"
           width={100}
           height={100}
+          className="rounded-xl"
         />
       </Link>
 
@@ -39,7 +40,7 @@ export default function Nav() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-full right-4 mt-2 w-48 bg-background dark:bg-gray-800 shadow-lg rounded-lg flex flex-col gap-4 p-4 md:hidden text-base font-medium z-50">
+        <div className="absolute top-full right-2 mt-2 w-30 bg-background dark:bg-background shadow-lg rounded-lg flex flex-col gap-4 p-4 md:hidden text-base font-medium z-50">
           <Link href="#about" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>About Me</Link>
           <Link href="#projects" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link href="#contact" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>

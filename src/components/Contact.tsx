@@ -85,6 +85,7 @@ const Contact = () => {
   <CardFooter className="justify-center">
     <Button type="submit">Send Message</Button>
   </CardFooter>
+  
 </Card>
   );
 };

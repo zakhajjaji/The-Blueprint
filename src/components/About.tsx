@@ -26,7 +26,7 @@ React.useEffect(() => {
 }, [api])
 
     return(
-<section id="about" className="py-36 px-6 bg-background text-foreground">
+<section id="about" className="py-4 px-6 bg-background text-foreground">
   <div className="max-w-3xl mx-auto text-center mb-16">
     <h2 className="text-4xl font-bold mb-4">The Blueprint Scrolls</h2>
     <p className="text-muted-foreground text-lg">
@@ -34,7 +34,7 @@ React.useEffect(() => {
     </p>
   </div>
 
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
     {aboutPhrases.map(({ title, text }, index) => (
       <Card
         key={index}
@@ -48,11 +48,6 @@ React.useEffect(() => {
         </div>
       </Card>
     ))}
-  </div>
-
-  <div className="mt-10 text-center">
-    <h3 className="text-2xl text-muted-foreground">The blueprint is still unfolding. Let's build something together.</h3>
-    <Button className="mt-4" variant="default" size="lg">Get in Touch</Button>
   </div>
 </section>
     )

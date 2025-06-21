@@ -8,7 +8,6 @@ import {
     CardFooter,
   } from "@/components/ui/card"
 
-
   type ProjectProps = {
     title: string;
     description: string;
@@ -22,7 +21,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
   return (
     <Card>
     <CardHeader>
-      {image && <img src={image} alt={title} />}
+      {image && <img src={image} alt={title} className='w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
     </CardHeader>
