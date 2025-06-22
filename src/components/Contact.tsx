@@ -22,12 +22,36 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import toast from "react-hot-toast";
 
 const Contact = () => {
-  const form = useForm();
-  const onSubmit = (data: any) => {
-    console.log("Thank you for getting in touch!", data);
+  const form = useForm({
+    defaultValues: {
+    name: "",
+    email: "",
+    message: ""
+    }
+  });
+  const onSubmit = async (data: any) => {
+
+  try {
+    const res = await fetch ("/api/contact", {
+      method: "POST",
+      headers: { "content-type": "application/json"},
+      body: JSON.stringify(data),
+    })
+  const result = await res.json(); 
+
+  if (res.ok) { 
+    toast.success(result.message); // from backend controller 
+  } else {
+    toast.error(result.message || "Something went wrong!");
+  } 
+} catch (error) {
+  toast.error("Server error"); 
+}
   };
+
   return (
 
     <Card id="contact" className="max-w-5xl mx-auto shadow-lg">
@@ -81,11 +105,10 @@ const Contact = () => {
     />
       </form>
     </Form>
-</CardContent>
-  <CardFooter className="justify-center">
+    <div className="flex justify-center pt-4">
     <Button type="submit">Send Message</Button>
-  </CardFooter>
-  
+    </div>
+</CardContent> 
 </Card>
   );
 };

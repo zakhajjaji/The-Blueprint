@@ -15,7 +15,7 @@ const projects = [
     {
     title: "Bank Encoder",
     description: "A lightweight JavaScript app that scrambles transaction data using string methods and input masking; clean, fast, and built with security in mind",
-    link: "",
+    link: "https://funkmafia.github.io/caesar-cypher-app-/",
     image: "/assets/the_bank_encoder_screenshot.png",
     tags: ["JavaScript", "Tailwind"],
     status: "complete" as "complete" 
@@ -31,7 +31,7 @@ const projects = [
             {
               title: "Batman vs. Riddler",
               description: "A browser-based game built with conditional logic and timers. Step into Batman's boots to solve riddles and outsmart The Riddler, one room at a time.",
-              link: "",
+              link: "https://funkmafia.github.io/batman-vs-riddler/",
               image: "/assets/Riddle me this screenshot.png",
               tags: ["JavaScript", "Tailwind", "OOP"],
               status: "complete" as "complete" 
@@ -54,7 +54,7 @@ const projects = [
 },
 {
     title: "Web Scraper Ai Consulant",
-    description: "",
+    description: "A minimal, user-friendly interface that allows business owners and marketers to submit their website URL for instant analysis. It sends the URL to a backend AI service that scrapes key content, and returns scorecard with visual summaries.",
     link: "",
     image: "",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
