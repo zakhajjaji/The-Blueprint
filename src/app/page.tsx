@@ -20,8 +20,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-background text-foreground">
-  <main className="max-w-6xl mx-auto px-6 sm:px-8 md:px-2 space-y-4">
+    <div className="min-h-screen w-full bg-background text-foreground overflow-x-hidden">
+  <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-4">
   <Nav />
 <Hero />
 <About />

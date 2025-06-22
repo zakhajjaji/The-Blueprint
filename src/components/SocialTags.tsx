@@ -9,7 +9,7 @@ const SocialTags = () => {
         <div className="mt-12 flex flex-wrap justify-center gap-10" data-aos="fade-up" data-aos-delay="200">
       <div className="space-x-3">
         <Button size="icon">
-        <Linkedin />
+        <Linkedin href="linkedin.com/in/Zak-Hajjaji" />
         </Button>
         <Button>
         <Mail />

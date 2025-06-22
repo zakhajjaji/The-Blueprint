@@ -56,7 +56,7 @@ const projects = [
     title: "Web Scraper Ai Consulant",
     description: "A minimal, user-friendly interface that allows business owners and marketers to submit their website URL for instant analysis. It sends the URL to a backend AI service that scrapes key content, and returns scorecard with visual summaries.",
     link: "",
-    image: "",
+    image: "assets/ai_webscraper_placeholder.jpg",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
     status: "in-progress" as "in-progress" 
 },
