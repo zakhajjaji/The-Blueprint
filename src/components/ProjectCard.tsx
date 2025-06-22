@@ -23,7 +23,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
     <CardHeader>
       {image && <img src={image} alt={title} className='w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
       <CardTitle>{title}</CardTitle>
-      <CardDescription>{description}</CardDescription>
+      <CardDescription className='h-28'>{description}</CardDescription>
     </CardHeader>
     
     <CardFooter className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between p-4 border-t border-border">

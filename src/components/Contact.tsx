@@ -35,9 +35,9 @@ const Contact = () => {
   const onSubmit = async (data: any) => {
 
   try {
-    const res = await fetch ("/api/contact", {
+    const res = await fetch (`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
       method: "POST",
-      headers: { "content-type": "application/json"},
+      headers: { "Content-Type": "application/json"},
       body: JSON.stringify(data),
     })
   const result = await res.json(); 
@@ -103,11 +103,11 @@ const Contact = () => {
         </FormItem>
       )}
     />
-      </form>
-    </Form>
-    <div className="flex justify-center pt-4">
+     <div className="flex justify-center pt-4">
     <Button type="submit">Send Message</Button>
     </div>
+      </form>
+    </Form>
 </CardContent> 
 </Card>
   );
