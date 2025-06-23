@@ -45,12 +45,12 @@ const projects = [
             status: "in-progress" as "in-progress" 
 },
 {
-    title: "",
-    description: "",
-    link: "",
-    image: "",
-    tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
-    status: "in-progress" as "in-progress" 
+    title: "QuickPro Calculator",
+    description: "A sleek, interactive JavaScript-powered calculator featuring clean DOM logic, modular structure, and a responsive Tailwind CSS layout. Handles decimals, operator logic, and full reset functionality for smooth user experience.",
+    link: "https://funkmafia.github.io/Calculator/index.html",
+    image: "/assets/calculator-screenshot.png",
+    tags: ["html", "Tailwind", "javascript"],
+    status: "complete" as "complete" 
 },
 {
     title: "Web Scraper Ai Consulant",
