@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 // Metadata for SEO and tab title
 export const metadata: Metadata = {
-  title: "Zak`s Blueprint",
+  title: "Zak's Blueprint",
   description:    "Explore Zak's Blueprint; a full-stack developer portfolio showcasing projects built with React, Next.js, and TypeScript. Clean code. Creative solutions.",
 };
 
