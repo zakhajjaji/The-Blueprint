@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/card"
 import SocialTags from "@/components/SocialTags";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
 <Projects />
 <Contact />
 <SocialTags />
+<Testimonials />
 <Footer />
 
 </main>

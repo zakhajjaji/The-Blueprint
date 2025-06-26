@@ -53,12 +53,12 @@ const projects = [
     status: "complete" as "complete" 
 },
 {
-    title: "Web Scraper Ai Consulant",
+    title: "Zajaik: Web Audit Consultant",
     description: "A minimal, user-friendly interface that allows business owners and marketers to submit their website URL for instant analysis. It sends the URL to a backend AI service that scrapes key content, and returns scorecard with visual summaries.",
-    link: "",
-    image: "assets/ai_webscraper_placeholder.jpg",
+    link: "https://www.zajaik.com",
+    image: "/assets/zajaik-dark.png",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
-    status: "in-progress" as "in-progress" 
+    status: "complete" as "complete" 
 },
 
 ]

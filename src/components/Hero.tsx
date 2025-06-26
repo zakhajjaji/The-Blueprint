@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"; 
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -9,9 +10,14 @@ export default function Hero() {
           <h1 className="text-5xl md:text-6xl text-font-semibold tracking-tight">Zak Hajjaji - Software Developer</h1>
         <h4 className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">Building sleek, scalable full-stack apps with clean code and creative flair</h4>
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg">View Projects</Button>
+            <Button size="lg">
+                <Link href="#projects">
+                View Projects
+                </Link></Button>
             <Button size="lg" variant="secondary">
+            <Link href="#contact">
                 Contact Me
+                </Link>
             </Button>
         </div>
         </div>
