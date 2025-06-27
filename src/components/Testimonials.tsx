@@ -20,7 +20,7 @@ const testimonialsData = [
     name: "Alfie Fort",
     title: "Software Engineer & Instructor",
     company: "The Developer Academy",
-    reltionship: "Tutor",
+    relationship: "Tutor",
   },
   {
     id: 2,
@@ -61,10 +61,10 @@ const Testimonials = () => {
             <CardHeader className="pb-4">
             <Quote className="w-8 h-8 text-primary/20 absolute top-6 right-6" />
             </CardHeader>
-            <CardContent className="pt-0">
+            <CardContent className="">
                 <blockquote>{Testimonials.quote}</blockquote>
                 <div className="flex items-center gap-3">
-            <div className="mt-10">
+            <div className="absolute bottom-6">
                     <div className="font-semibold text-sm">{Testimonials.name}</div>
                     <div className="text-xs text-muted-foreground">{Testimonials.title}</div>
                     <div className="text-xs text-muted-foreground">{Testimonials.company}</div>
