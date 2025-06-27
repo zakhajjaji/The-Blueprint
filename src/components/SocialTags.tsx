@@ -21,8 +21,8 @@ const SocialTags = () => {
   <g
     fill="none"
     stroke="#000000"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     strokeWidth="2"
   >
     <path
@@ -49,8 +49,8 @@ const SocialTags = () => {
   <g
     fill="none"
     stroke="#000000"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     strokeWidth="2"
   >
     <path

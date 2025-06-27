@@ -62,15 +62,13 @@ const Testimonials = () => {
             <Quote className="w-8 h-8 text-primary/20 absolute top-6 right-6" />
             </CardHeader>
             <CardContent className="">
-                <blockquote>{Testimonials.quote}</blockquote>
-                <div className="flex items-center gap-3">
-            <div className="absolute bottom-6">
-                    <div className="font-semibold text-sm">{Testimonials.name}</div>
-                    <div className="text-xs text-muted-foreground">{Testimonials.title}</div>
-                    <div className="text-xs text-muted-foreground">{Testimonials.company}</div>
+            <div className="mb-5">
+                    <div className="font-bold text-sm">{Testimonials.name}</div>
+                    <div className="text-xs text-muted-primary">{Testimonials.title}</div>
+                    <div className="text-xs font-semibold text-muted-primary">{Testimonials.company}</div>
                     <div className="text-xs text-primary font-medium mt-1">{Testimonials.relationship}</div>
-                  </div>
             </div>
+                <blockquote>{Testimonials.quote}</blockquote>
             </CardContent>
 
             </Card>
