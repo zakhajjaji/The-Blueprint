@@ -39,7 +39,7 @@ const projects = [
 {
             title: "Mic Drop",
             description: "MicDrop is a full-stack music gig event application built with a vibrant, urban vibe. It allows users to view, create, update, and delete music events such as DJ sets, live shows, and underground performances.",
-            link: "",
+            link: "https://mic-drop-front.vercel.app",
             image: "/assets/MicDrop.png",
             tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
             status: "in-progress" as "in-progress" 
