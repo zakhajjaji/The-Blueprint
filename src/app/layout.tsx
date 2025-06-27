@@ -21,6 +21,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Zak's Blueprint",
   description:    "Explore Zak's Blueprint; a full-stack developer portfolio showcasing projects built with React, Next.js, and TypeScript. Clean code. Creative solutions.",
+  icons: {
+    icon: "/zakblueprint.ico",
+  },
 };
 
 export default function RootLayout({
