@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   title: "Zak's Blueprint",
   description: "Explore Zak's Blueprint; a full-stack developer portfolio showcasing projects built with React, Next.js, and TypeScript. Clean code. Creative solutions.",
   icons: {
-    icon: "/zakblueprint.ico",
+    icon: [
+      { url: "/zakblueprint.ico", type: "image/x-icon" },
+      { url: "/favicon.ico", type: "image/x-icon" }, // fallback for Safari
+      // works on other browsers, but not safari, shock
+    ],
   },
 };
 
