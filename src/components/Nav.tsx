@@ -22,29 +22,31 @@ export default function Nav() {
         />
       </Link>
 
-      {/* Desktop Nav */}
+
       <div className="hidden md:flex gap-6 text-lg md:text-base font-medium items-center">
         <Link href="#about" className="hover:text-primary transition-colors">About Me</Link>
         <Link href="#projects" className="hover:text-primary transition-colors">Projects</Link>
         <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
+        <Link href="#testimonials" className="hover:text-primary transition-colors">Testimonials</Link>
         <Button asChild size="sm">
-          <a href="" target="_blank" rel="noopener noreferrer">CV</a>
+          <a href="/assets/ZAK-HAJJAJI-JNR.SOFTWARE-DEV-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         </Button>
         <ThemeToggle />
       </div>
 
-      {/* Mobile Menu Toggle */}
+
       <Button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
         <Menu className="w-6 h-6 text-foreground" />
       </Button>
 
-      {/* Mobile Dropdown Menu */}
+
       {menuOpen && (
         <div className="absolute top-full right-2 mt-2 w-30 bg-background dark:bg-background shadow-lg rounded-lg flex flex-col gap-4 p-4 md:hidden text-base font-medium z-50">
           <Link href="#about" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>About Me</Link>
           <Link href="#projects" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link href="#contact" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
-          <a href="" target="_blank" rel="noopener noreferrer" className="text-primary" onClick={() => setMenuOpen(false)}>CV</a>
+          <Link href="#testimonials" className="hover:text-primary transition-colors" onClick={() => setMenuOpen(false)}>Testimonials</Link>
+          <a href="/assets/ZAK-HAJJAJI-JNR.SOFTWARE-DEV-CV.pdf" target="_blank" rel="noopener noreferrer" className="text-primary" onClick={() => setMenuOpen(false)}>CV</a>
           <ThemeToggle />
         </div>
       )}

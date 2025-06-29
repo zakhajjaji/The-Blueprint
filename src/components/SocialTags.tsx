@@ -34,7 +34,7 @@ const SocialTags = () => {
 </Link>
         </Button>
         <Button>
-        <Mail/>
+        <Mail className="text-black"/>
         </Button>
         <Button size="icon">
         <Link href="https://github.com/funkmafia" target="_blank">
