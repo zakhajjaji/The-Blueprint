@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zak's Blueprint - Frontend
 
-## Getting Started
+This is the frontend of **Zak's Blueprint**, a full-stack personal portfolio website built by Zak Hajjaji (aka @funkmafia, aka me !! ). It showcases projects, experience, and personal growth through sleek design and modern tech.
 
-First, run the development server:
+## 🎯 Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To present my journey with a creative, functional, and scalable portfolio site built using industry-standard tools.
+
+## 🔧 Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS, ShadCN, TweakCN
+- **TypeScript** for static typing
+- **UI Enhancements**: Lucide Icons, custom animated cursor
+- **Hosting**: Vercel
+
+## 🌟 Features
+
+- Smooth dark/light theme toggle
+- Animated custom cursor
+- Polished and modular component structure
+- Interactive contact form (connected to backend)
+- Downloadable CV and featured project gallery
+- Testimonials and personal blueprint timeline
+
+## 📁 Folder Structure
+
+```
+src/
+  components/       # Reusable components
+  app/              # Route handlers (Next.js App Router)
+  styles/           # Global CSS and custom Tailwind classes
+  lib/              # Utilities and configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install dependencies**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+2. **Start the dev server**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Visit `http://localhost:3000` in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 Live Site
 
-## Deploy on Vercel
+Visit the live version at [zakblueprint.com](https://www.zakblueprint.com)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙌 Acknowledgements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with guidance from **The Developer Academy**, and a passion for design, storytelling, and clean engineering.
