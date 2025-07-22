@@ -13,14 +13,22 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const projects = [
+    // {
+    // title: "Bank Encoder",
+    // description: "A lightweight JavaScript app that scrambles transaction data using string methods and input masking; clean, fast, and built with security in mind",
+    // link: "https://funkmafia.github.io/caesar-cypher-app-/",
+    // image: "/assets/the_bank_encoder_screenshot.png",
+    // tags: ["JavaScript", "Tailwind"],
+    // status: "complete" as "complete" 
+    // },
     {
-    title: "Bank Encoder",
-    description: "A lightweight JavaScript app that scrambles transaction data using string methods and input masking; clean, fast, and built with security in mind",
-    link: "https://funkmafia.github.io/caesar-cypher-app-/",
-    image: "/assets/the_bank_encoder_screenshot.png",
-    tags: ["JavaScript", "Tailwind"],
-    status: "complete" as "complete" 
-    },
+      title: "Mortgage.Suite",
+      description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors. The platform includes tools like stamp duty calculators, affordability checkers, and estimated monthly mortgage payments with accessibility and mobile responsiveness in mind.",
+      link: "https://mortgage-tools-fney.vercel.app",
+      image: "/assets/mortgage.suite.png",
+      tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
+      status: "complete" as "complete" 
+      },
         {
             title: "Weather App",
             description: "A sleek and modern SPA that provides users with a quick and intuitive summary of the weather forecast for the next 5 to 7 days.",
