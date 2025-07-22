@@ -23,9 +23,9 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
   return (
     <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full flex flex-col mx-auto'>
     <CardHeader>
-      {image && <img src={image} alt={title} className='w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
+      {image && <img src={image} alt={title} className='w-full h-52 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
       <CardTitle>{title}</CardTitle>
-      <CardDescription className='h-28'>{description}</CardDescription>
+      <CardDescription className='max-h-52 h-52'>{description}</CardDescription>
     </CardHeader>
     
     <CardFooter className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between p-4 border-t border-border">
