@@ -23,7 +23,7 @@ const projects = [
     // },
     {
       title: "Mortgage.Suite",
-      description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors. The platform includes tools like stamp duty calculators, affordability checkers, and estimated monthly mortgage payments with accessibility and mobile responsiveness in mind.",
+      description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors.",
       link: "https://mortgage-tools-fney.vercel.app",
       image: "/assets/mortgage.suite.png",
       tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
+// import CustomCursor from "@/components/CustomCursor";
 import { ThemeProvider } from "next-themes";
 import Nav from "@/components/Nav";
 import { Toaster } from "react-hot-toast"
@@ -41,7 +41,7 @@ export default function RootLayout({
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Toaster position="top-right" />
-          <CustomCursor />
+          {/* <CustomCursor /> */}
         </ThemeProvider>
       </body>
     </html>
