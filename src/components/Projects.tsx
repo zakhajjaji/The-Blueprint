@@ -22,21 +22,21 @@ const projects = [
     // status: "complete" as "complete" 
     // },
     {
-      title: "Mortgage.Suite",
+      title: "Mortgage Tools",
       description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors.",
       link: "https://mortgage-tools-fney.vercel.app",
       image: "/assets/mortgage.suite.png",
       tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
       status: "complete" as "complete" 
       },
-        {
-            title: "Weather App",
-            description: "A sleek and modern SPA that provides users with a quick and intuitive summary of the weather forecast for the next 5 to 7 days.",
-            link: "https://weather-app-lovat-gamma-72.vercel.app",
-            image: "/assets/Weather-app.png",
-            tags: ["Next.js", "Tailwind"],
-            status: "in-progress" as "in-progress" 
-            },
+      {
+        title: "Web Audit Consultant",
+        description: "A minimal, user-friendly interface that allows business owners and marketers to submit their website URL for instant analysis. It sends the URL to a backend AI service that scrapes key content, and returns scorecard with visual summaries.",
+        link: "https://www.zajaik.com",
+        image: "/assets/zajaik-dark.png",
+        tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
+        status: "complete" as "complete" 
+    },
             {
               title: "Batman vs. Riddler",
               description: "A browser-based game built with conditional logic and timers. Step into Batman's boots to solve riddles and outsmart The Riddler, one room at a time.",
@@ -62,13 +62,13 @@ const projects = [
     status: "complete" as "complete" 
 },
 {
-    title: "Zajaik: Web Audit Consultant",
-    description: "A minimal, user-friendly interface that allows business owners and marketers to submit their website URL for instant analysis. It sends the URL to a backend AI service that scrapes key content, and returns scorecard with visual summaries.",
-    link: "https://www.zajaik.com",
-    image: "/assets/zajaik-dark.png",
-    tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
-    status: "complete" as "complete" 
-},
+  title: "Weather App",
+  description: "A sleek and modern SPA that provides users with a quick and intuitive summary of the weather forecast for the next 5 to 7 days.",
+  link: "https://weather-app-lovat-gamma-72.vercel.app",
+  image: "/assets/Weather-app.png",
+  tags: ["Next.js", "Tailwind"],
+  status: "in-progress" as "in-progress" 
+  },
 
 ]
 
@@ -89,12 +89,12 @@ export const Projects = () => {
   <ProjectCard key={index} {...project} />
 ))}
     </div>
-    <div className="mt-10 text-center">
+    {/* <div className="mt-10 text-center">
     <h3 className="text-2xl text-muted-foreground">The blueprint is still unfolding. Let's build something together.</h3>
     <Button className="mt-4" variant="default" size="lg"> 
                 <Link href="#contact">Get in Touch</Link>
                 </Button>
-  </div>
+  </div> */}
     </section>
   )
 }

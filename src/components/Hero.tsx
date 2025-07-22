@@ -13,12 +13,12 @@ export default function Hero() {
         <div className="absolute inset-0 z-0 pointer-events-none">
           <RippleGrid
             enableRainbow={false}
-            gridColor="#7d6eb7"
-            rippleIntensity={0.02}
-            gridSize={30}
+            gridColor="#A020F0"
+            rippleIntensity={0.04}
+            gridSize={50}
             gridThickness={10}
             mouseInteraction={true}
-            mouseInteractionRadius={1.2}
+            mouseInteractionRadius={2.2}
             opacity={0.3}
           />
         </div>
@@ -28,14 +28,14 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
             Zak Hajjaji - Software Developer
           </h1>
-          <h4 className="mt-4 text-lg text-foreground max-w-xl mx-auto">
+          {/* <h4 className="mt-4 text-lg text-foreground max-w-xl mx-auto">
             Building sleek, scalable full-stack apps with clean code and creative flair
-          </h4>
+          </h4> */}
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg">
               <Link href="#projects">View Projects</Link>
             </Button>
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="outline">
               <Link href="#contact">Contact Me</Link>
             </Button>
           </div>

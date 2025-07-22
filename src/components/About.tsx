@@ -7,6 +7,8 @@ import React from "react";
 import { ArrowUp } from 'lucide-react';
 import { ArrowDown } from 'lucide-react';
 import Autoplay from 'embla-carousel-autoplay';
+import MagicBento from "./animations/MagicBento";
+import SpotlightCard from "./animations/SpotlightCard";
 
 
 export default function About() {
@@ -34,11 +36,13 @@ React.useEffect(() => {
     </p>
   </div>
 
+
+
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
     {aboutPhrases.map(({ title, text }, index) => (
-      <Card
+      <SpotlightCard
         key={index}
-        className="bg-card text-card-foreground border border-border shadow-md"
+        className="bg-background/10 text-card-foreground border border-border shadow-md"
         data-aos="fade-up"
         data-aos-delay={index * 100}
       >
@@ -46,7 +50,7 @@ React.useEffect(() => {
           <h3 className="text-xl font-bold text-primary">{title}</h3>
           <p className="text-muted-foreground leading-relaxed">{text}</p>
         </div>
-      </Card>
+      </SpotlightCard>
     ))}
   </div>
 </section>

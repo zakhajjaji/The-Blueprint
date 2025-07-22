@@ -56,8 +56,8 @@ const Contact = () => {
 
     <Card id="contact" className="max-w-5xl mx-auto shadow-lg">
   <CardHeader>
-    <CardTitle>Contact Me</CardTitle>
-    <CardDescription>Got a question or opportunity? Drop me a message 👇</CardDescription>
+    <CardTitle className="text-xl text-center text-primary mt-5 mb-5">Contact Me</CardTitle>
+    <CardDescription className="text-lg text-center">Got a question or opportunity? Drop me a message 👇</CardDescription>
   </CardHeader>
   <CardContent>
     <Form {...form}>

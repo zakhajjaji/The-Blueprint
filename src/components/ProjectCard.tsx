@@ -17,9 +17,11 @@ import {
     status?: "complete" | "in-progress";
   };
 
+  import SpotlightCard from './animations/SpotlightCard';
+
 export const ProjectCard = ({ title, description, link, image, tags, status }: ProjectProps) => {
   return (
-    <Card className='w-full max-w-sm sm:max-w-md md:max-w-full flex flex-col mx-auto'>
+    <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full flex flex-col mx-auto'>
     <CardHeader>
       {image && <img src={image} alt={title} className='w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
       <CardTitle>{title}</CardTitle>
@@ -48,5 +50,5 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
         ))}
       </div>
     </CardFooter>
-  </Card>
+  </SpotlightCard>
 )};

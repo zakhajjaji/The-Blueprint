@@ -11,6 +11,7 @@ import {
 import { ProjectCard } from "./ProjectCard";
 import { Button } from "./ui/button";
 import { Quote } from "lucide-react";
+import Link from "next/link";
 
 const testimonialsData = [
   {
@@ -74,7 +75,12 @@ const Testimonials = () => {
             </Card>
             )}
         </div>
-
+        <div className="mt-20 mb-10 text-center">
+    <h3 className="text-2xl text-muted-foreground">The blueprint is still unfolding. Let's build something together.</h3>
+    <Button className="mt-4" variant="default" size="lg"> 
+                <Link href="#contact">Get in Touch</Link>
+                </Button>
+  </div>
       </div>
     </section>
   );
