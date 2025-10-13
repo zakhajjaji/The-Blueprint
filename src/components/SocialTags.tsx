@@ -10,7 +10,7 @@ const SocialTags = () => {
         <div className="mt-12 flex flex-wrap justify-center gap-10" data-aos="fade-up" data-aos-delay="200">
       <div className="space-x-3">
         <Button size="icon" >
-  <Link   href="https://www.linkedin.com/in/zak-hajjaji-m-sc-cemap-939920111/" target="_blank">
+  <Link   href="https://www.linkedin.com/in/zak-hajjaji-m-sc-939920111/" target="_blank">
         <svg
   role="img"
   xmlns="http://www.w3.org/2000/svg"
