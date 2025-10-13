@@ -11,7 +11,7 @@ const navItems: PillNavItem[] = [
 
 export default function Nav() {
   return (
-    <nav className="fixed top-2 left-0 right-0 z-50">
+    <nav className="fixed top-4 left-0 right-0 z-50">
       <div className="relative mx-auto max-w-6xl px-6 mb-6 sm:px-6 md:px-8 h-14 flex items-center justify-center">
         <PillNav
           logo="/assets/AureyaTech_Portfolio_Logo.jpg"

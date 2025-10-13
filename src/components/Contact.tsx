@@ -53,13 +53,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-16 scroll-mt-24">
+    <section id="contact" className="py-12 md:py-6 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 text-center mb-8">
       <h2 className="mt-2 mb-6 text-3xl md:text-4xl font-semibold tracking-tight">Contact Me</h2>
         <p className="mt-2 text-sm md:text-base text-foreground/70">Open to collaborations, product work, and advisory. Drop a message.</p>
       </div>
 
-      <Card className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur relative">        <CardContent>
+      <Card className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur relative">        <CardContent>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
