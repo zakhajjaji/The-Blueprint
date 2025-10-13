@@ -1,24 +1,13 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
-import About from "@/components/About"; 
-import ThemeToggle from "@/components/ThemeToggle";
 import Nav from "@/components/Nav";
 import Contact from "@/components/Contact";
 import { Projects } from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Stats from "@/components/Stats";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardFooter,
-} from "@/components/ui/card"
 import SocialTags from "@/components/SocialTags";
 import Footer from "@/components/Footer";
-import Testimonials from "@/components/Testimonials";
+
 
 
 export default function Home() {
@@ -27,13 +16,11 @@ export default function Home() {
   <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-4">
   <Nav />
 <Hero />
-<About />
 <Skills />
 <Projects />
 <Stats />
 <Contact />
 <SocialTags />
-<Testimonials />
 <Footer />
 
 </main>
