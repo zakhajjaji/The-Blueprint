@@ -6,6 +6,8 @@ import ThemeToggle from "@/components/ThemeToggle";
 import Nav from "@/components/Nav";
 import Contact from "@/components/Contact";
 import { Projects } from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Stats from "@/components/Stats";
 import {
   Card,
   CardContent,
@@ -25,9 +27,11 @@ export default function Home() {
   <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-4">
   <Nav />
 <Hero />
-<Projects />
-<Contact />
 <About />
+<Skills />
+<Projects />
+<Stats />
+<Contact />
 <SocialTags />
 <Testimonials />
 <Footer />

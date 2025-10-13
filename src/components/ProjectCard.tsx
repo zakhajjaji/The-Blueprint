@@ -21,7 +21,7 @@ import {
 
 export const ProjectCard = ({ title, description, link, image, tags, status }: ProjectProps) => {
   return (
-    <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full flex flex-col mx-auto'>
+    <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full flex flex-col mx-auto backdrop-blur-md bg-white/70 border border-[rgba(var(--accent-violet),0.25)] shadow-sm hover:shadow-md transition'>
     <CardHeader>
       {image && <img src={image} alt={title} className='w-full h-52 object-cover rounded-xl mb-4 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg'/>}
       <CardTitle>{title}</CardTitle>
@@ -44,7 +44,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status }: P
     <CardFooter>
     <div className="flex gap-2 flex-wrap">
         {tags.map(tag => (
-          <span key={tag} className="px-3 py-1 text-xs font-semibold bg-muted text-muted-foreground rounded-md shadow-sm">
+          <span key={tag} className="px-3 py-1 text-xs font-semibold rounded-md shadow-sm border border-[rgba(var(--accent-violet),0.25)] bg-[rgba(var(--highlight-lilac),0.35)] text-foreground">
             {tag}
           </span>
         ))}

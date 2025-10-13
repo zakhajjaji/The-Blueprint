@@ -11,15 +11,7 @@ export default function Nav() {
 
   return (
     <nav className="w-full flex justify-between items-center px-6 py-4 bg-background dark:bg-background fixed top-0 left-0 z-50">
-      <Link href="/">
-        <Image
-          src="/assets/zak-blueprint-logo.jpg"
-          alt="Zak Blueprint Logo"
-          width={100}
-          height={100}
-          className="rounded-xl"
-        />
-      </Link>
+     
 
       <div className="hidden md:flex gap-6 text-lg md:text-base font-medium items-center">
         <Link href="#projects" className="hover:text-primary transition-colors">

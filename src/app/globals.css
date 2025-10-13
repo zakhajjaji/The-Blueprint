@@ -88,6 +88,9 @@
   --shadow-lg: 0px 4px 10px 0px hsl(240 18.1102% 24.9020% / 0.12), 0px 4px 6px -1px hsl(240 18.1102% 24.9020% / 0.12);
   --shadow-xl: 0px 4px 10px 0px hsl(240 18.1102% 24.9020% / 0.12), 0px 8px 10px -1px hsl(240 18.1102% 24.9020% / 0.12);
   --shadow-2xl: 0px 4px 10px 0px hsl(240 18.1102% 24.9020% / 0.30);
+  /* AI-inspired accents */
+  --accent-violet: 138 121 171; /* #8A79AB */
+  --highlight-lilac: 223 217 236; /* #DFD9EC */
 }
 
 .dark {

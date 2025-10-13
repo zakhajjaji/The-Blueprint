@@ -54,10 +54,10 @@ const Contact = () => {
 
   return (
 
-    <Card id="contact" className="mx-auto shadow-lg">
+    <Card id="contact" className="mx-auto shadow-lg backdrop-blur-md bg-white/80 border border-[rgba(var(--accent-violet),0.25)]">
   <CardHeader>
-    <CardTitle className="text-xl text-center text-primary mt-5 mb-5">Contact Me</CardTitle>
-    <CardDescription className="text-lg text-center">Got a question or opportunity? Drop me a message 👇</CardDescription>
+    <CardTitle className="text-xl text-center text-primary mt-5 mb-5">Let’s Build Something Intelligent</CardTitle>
+    <CardDescription className="text-lg text-center">Open to collaborations, product work, and advisory. Drop a message 👇</CardDescription>
   </CardHeader>
   <CardContent>
     <Form {...form}>
@@ -104,7 +104,10 @@ const Contact = () => {
       )}
     />
      <div className="flex justify-center pt-4">
-    <Button type="submit">Send Message</Button>
+    <Button type="submit" className="relative overflow-hidden">
+      <span className="relative z-10">Send Message</span>
+      <span className="absolute inset-0 opacity-0 hover:opacity-100 transition" style={{ background: "linear-gradient(90deg, rgba(var(--accent-violet),0.15), rgba(var(--highlight-lilac),0.3))" }} />
+    </Button>
     </div>
       </form>
     </Form>
