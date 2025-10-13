@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen w-full text-foreground overflow-x-hidden">
-  <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-4">
+  <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 space-y-4">
   <Nav />
 <Hero />
 {/* <Skills /> */}

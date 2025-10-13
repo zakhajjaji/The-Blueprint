@@ -33,9 +33,9 @@ const projects = [
 export const Projects = () => {
   return (
 
-    <section id="projects" className="py-12 md:py-16 text-foreground">
+    <section id="projects" className="pt-12 md:pt-6 pb-6 md:pb-4 text-foreground">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-center mb-6 md:mb-8">
 
           <h2 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight">Projects</h2>
           <p className="mt-3 text-foreground/70 max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-fr">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
             const isFeatured = index % 3 === 0; // 1 featured then 2 standard, repeat
             return (
