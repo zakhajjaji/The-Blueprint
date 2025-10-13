@@ -15,16 +15,17 @@ import {
     image?: string;
     tags: string[];
     status?: "complete" | "in-progress";
+    featured?: boolean;
   };
 
   import SpotlightCard from './animations/SpotlightCard';
 
-export const ProjectCard = ({ title, description, link, image, tags, status }: ProjectProps) => {
+export const ProjectCard = ({ title, description, link, image, tags, status, featured }: ProjectProps) => {
   return (
     <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full mx-auto overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md'>
       <CardHeader className='p-0'>
         {image && (
-          <div className='relative w-full aspect-[16/9] overflow-hidden'>
+          <div className={`relative w-full ${featured ? 'aspect-[21/9]' : 'aspect-[16/9]'} overflow-hidden`}>
             <img src={image} alt={title} className='absolute inset-0 h-full w-full object-cover' />
             <div className='absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent' />
           </div>
