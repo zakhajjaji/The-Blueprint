@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen w-full text-foreground overflow-x-hidden">
   <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-4">
   <Nav />
 <Hero />
@@ -22,7 +22,6 @@ export default function Home() {
 <Contact />
 <SocialTags />
 <Footer />
-
 </main>
     </div>
   );
