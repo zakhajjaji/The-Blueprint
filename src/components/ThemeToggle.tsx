@@ -3,7 +3,6 @@
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Button } from './ui/button';
-import { Switch } from '@/components/ui/switch'
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -17,11 +16,17 @@ export default function ThemeToggle() {
   if (!mounted) return null;
 
   return (
-    <Switch
+    <Button
+      type="button"
+      variant="outline"
+      size="sm"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="px-3 py-2 rounded-md text-sm font-medium bg-muted text-muted-foreground hover:bg-accent transition"
+      className="h-8 px-3 rounded-xl border-border/70 bg-background/60 backdrop-blur text-foreground hover:bg-muted"
+      aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
     >
-      {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
-    </Switch>
+      <span className="font-mono text-xs">
+        {theme === 'dark' ? 'Light' : 'Dark'}
+      </span>
+    </Button>
   );
 }
