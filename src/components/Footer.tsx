@@ -4,8 +4,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className="mt-16">
-      <div className="mx-auto max-w-6xl ">
-        <div className="relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur py-8 md:py-10">
+      <div className="mx-auto max-w-6xl mb-10 mt-10">
           <div aria-hidden className="pointer-events-none absolute inset-0">
             <div className="absolute inset-x-0 top-0 h-1.5" style={{ background: "linear-gradient(90deg, rgb(var(--accent-violet) / 0.7), rgb(var(--highlight-lilac) / 0.7))" }} />
           </div>
@@ -21,7 +20,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
     </footer>
   )
 }

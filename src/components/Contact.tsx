@@ -53,13 +53,13 @@ const Contact = () => {
   };
 
   return (
+    <section id="contact" className="py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 text-center mb-8">
+      <h2 className="mt-2 mb-6 text-3xl md:text-4xl font-semibold tracking-tight">Contact Me</h2>
+        <p className="mt-2 text-sm md:text-base text-foreground/70">Open to collaborations, product work, and advisory. Drop a message.</p>
+      </div>
 
-    <Card id="contact" className="mx-auto shadow-lg backdrop-blur-md bg-white/80 border border-[rgba(var(--accent-violet),0.25)]">
-  <CardHeader>
-    <CardTitle className="text-xl text-center text-primary mt-5 mb-5">Let’s Build Something Intelligent</CardTitle>
-    <CardDescription className="text-lg text-center">Open to collaborations, product work, and advisory. Drop a message 👇</CardDescription>
-  </CardHeader>
-  <CardContent>
+      <Card className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur relative">        <CardContent>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
@@ -103,16 +103,16 @@ const Contact = () => {
         </FormItem>
       )}
     />
-     <div className="flex justify-center pt-4">
-    <Button type="submit" className="relative overflow-hidden">
-      <span className="relative z-10">Send Message</span>
-      <span className="absolute inset-0 opacity-0 hover:opacity-100 transition" style={{ background: "linear-gradient(90deg, rgba(var(--accent-violet),0.15), rgba(var(--highlight-lilac),0.3))" }} />
-    </Button>
-    </div>
-      </form>
-    </Form>
-</CardContent> 
-</Card>
+          <div className="flex justify-center pt-2 pb-6">
+            <Button type="submit" variant="default" className="hover:bg-primary/90">
+              Send Message
+            </Button>
+          </div>
+        </form>
+      </Form>
+        </CardContent>
+      </Card>
+    </section>
   );
 };
 
