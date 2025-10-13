@@ -14,7 +14,8 @@ export default function Nav() {
     <nav className="fixed top-2 left-0 right-0 z-50">
       <div className="relative mx-auto max-w-6xl px-6 mb-6 sm:px-6 md:px-8 h-14 flex items-center justify-center">
         <PillNav
-          logo="/assets/zak-blueprint-logo.svg"
+          logo="/assets/AureyaTech_Portfolio_Logo.jpg"
+          logoAlt="Portfolio Logo"  
           items={navItems}
           className="text-foreground"
           baseColor="rgb(var(--foreground))"
