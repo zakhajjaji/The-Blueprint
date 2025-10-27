@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Batman vs. Riddler",
-    description: "",
+    description: "An interactive quiz game featuring iconic Batman and Riddler themes, built with vanilla JavaScript and object-oriented programming principles.",
     link: "https://funkmafia.github.io/batman-vs-riddler/",
     image: "/assets/Riddle me this screenshot.png",
     tags: ["JavaScript", "Tailwind", "OOP"],
@@ -23,7 +23,7 @@ const projects = [
 
   {
     title: "Weather App",
-    description: "",
+    description: "A clean, responsive weather application providing real-time forecasts with an intuitive user interface and smooth animations.",
     link: "https://weather-app-lovat-gamma-72.vercel.app",
     image: "/assets/Weather-app.png",
     tags: ["Next.js", "Tailwind"],

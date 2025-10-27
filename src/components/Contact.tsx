@@ -48,7 +48,6 @@ const Contact = () => {
   } else {
     toast.error("Server error");
   }
-  toast.error("Server error"); 
 }
   };
 
