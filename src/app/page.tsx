@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Contact from "@/components/Contact";
 import { Projects } from "@/components/Projects";
-import Skills from "@/components/Skills";
 import Stats from "@/components/Stats";
 import SocialTags from "@/components/SocialTags";
 import Footer from "@/components/Footer";

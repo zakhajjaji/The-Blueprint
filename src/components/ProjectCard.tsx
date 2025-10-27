@@ -1,7 +1,5 @@
 import React from 'react'
 import {
-    Card,
-    CardContent,
     CardHeader,
     CardTitle,
     CardDescription,
@@ -19,6 +17,7 @@ import {
   };
 
   import SpotlightCard from './animations/SpotlightCard';
+  import Image from 'next/image';
 
 export const ProjectCard = ({ title, description, link, image, tags, status, featured }: ProjectProps) => {
   return (
@@ -26,7 +25,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status, fea
       <CardHeader className='p-0'>
         {image && (
           <div className={`relative w-full ${featured ? 'aspect-[21/9]' : 'aspect-[16/9]'} overflow-hidden`}>
-            <img src={image} alt={title} className='absolute inset-0 h-full w-full object-cover' />
+            <Image width={400} height={30} src={image} alt={title} className='absolute inset-0 h-full w-full object-cover' />
             <div className='absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent' />
           </div>
         )}

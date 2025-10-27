@@ -10,7 +10,7 @@ const projects = [
     link: "https://mortgage-tools-fney.vercel.app",
     image: "/assets/mortgage.suite.png",
     tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
-    status: "complete" as "complete"
+    status: "complete" as const
   },
   {
     title: "Batman vs. Riddler",
@@ -18,7 +18,7 @@ const projects = [
     link: "https://funkmafia.github.io/batman-vs-riddler/",
     image: "/assets/Riddle me this screenshot.png",
     tags: ["JavaScript", "Tailwind", "OOP"],
-    status: "complete" as "complete"
+    status: "complete" as const
   },
 
   {
@@ -27,7 +27,7 @@ const projects = [
     link: "https://weather-app-lovat-gamma-72.vercel.app",
     image: "/assets/Weather-app.png",
     tags: ["Next.js", "Tailwind"],
-    status: "complete" as "complete"
+    status: "complete" as const
   },
 ]
 export const Projects = () => {

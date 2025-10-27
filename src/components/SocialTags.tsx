@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, Mail, Github } from "lucide-react";
+import { 
+   Mail } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "./ui/button";

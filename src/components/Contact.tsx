@@ -1,21 +1,16 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
+
 import { Textarea } from "@/components/ui/textarea"
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardFooter,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -32,7 +27,7 @@ const Contact = () => {
     message: ""
     }
   });
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: { name: string; email: string; message: string }) => {
 
   try {
     const res = await fetch (`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
@@ -47,7 +42,12 @@ const Contact = () => {
   } else {
     toast.error(result.message || "Something went wrong!");
   } 
-} catch (error) {
+} catch (error: unknown) {
+  if (error instanceof Error) {
+    toast.error(error.message);
+  } else {
+    toast.error("Server error");
+  }
   toast.error("Server error"); 
 }
   };
