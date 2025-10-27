@@ -15,6 +15,8 @@ import {
     status?: "complete" | "in-progress";
     featured?: boolean;
   };
+  // added featured boolean to the projeccard to handle different image sizes for projects
+  // refer to the next.config.ts file for more details
 
   import SpotlightCard from './animations/SpotlightCard';
   import Image from 'next/image';
@@ -25,7 +27,15 @@ export const ProjectCard = ({ title, description, link, image, tags, status, fea
       <CardHeader className='p-0'>
         {image && (
           <div className={`relative w-full ${featured ? 'aspect-[21/9]' : 'aspect-[16/9]'} overflow-hidden`}>
-            <Image width={400} height={30} src={image} alt={title} className='absolute inset-0 h-full w-full object-cover' />
+            <Image 
+              width={featured ? 800 : 600}
+              height={featured ? 343 : 337}
+              src={image} 
+              alt={`${title} project screenshot`} 
+              className='absolute inset-0 h-full w-full object-cover'
+              priority={featured}
+              loading={featured ? "eager" : "lazy"}
+            />
             <div className='absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent' />
           </div>
         )}
