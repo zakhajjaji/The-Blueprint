@@ -47,7 +47,10 @@ export const ProjectCard = ({ title, description, link, image, tags, featured }:
       <CardFooter className='px-4 pb-4'>
         <div className='flex flex-wrap items-center gap-2'>
           {tags.map(tag => (
-            <span key={tag} className='font-mono text-[11px] md:text-xs text-foreground/70'>
+            <span 
+              key={tag} 
+              className='px-2.5 py-1 rounded-full text-[16px] font-medium bg-accent/50 text-accent-foreground border border-accent-foreground/10 hover:bg-accent/70 transition-colors'
+            >
               {tag}
             </span>
           ))}

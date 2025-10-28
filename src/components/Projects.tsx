@@ -9,8 +9,7 @@ const projects = [
     description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors.",
     link: "https://mortgage-tools-fney.vercel.app",
     image: "/assets/mortgage.suite.png",
-    tags: ["NextJS", "Tailwind", "MongoDb", "Insomnia", "Mongoose", "Express"],
-    status: "complete" as const
+    tags: ["NextJS","TypeScript", "MongoDB", "Insomnia", "Node.JS", "Express"],
   },
   {
     title: "Batman vs. Riddler",
@@ -18,7 +17,6 @@ const projects = [
     link: "https://funkmafia.github.io/batman-vs-riddler/",
     image: "/assets/Riddle me this screenshot.png",
     tags: ["JavaScript", "Tailwind", "OOP"],
-    status: "complete" as const
   },
 
   {
@@ -27,7 +25,6 @@ const projects = [
     link: "https://weather-app-lovat-gamma-72.vercel.app",
     image: "/assets/Weather-app.png",
     tags: ["Next.js", "Tailwind"],
-    status: "complete" as const
   },
 ]
 export const Projects = () => {
@@ -35,12 +32,38 @@ export const Projects = () => {
 
     <section id="projects" className="pt-12 md:pt-6 pb-6 md:pb-4 text-foreground">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="text-center mb-6 md:mb-8">
-
-          <h2 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight">Projects</h2>
-          <p className="mt-3 text-foreground/70 max-w-2xl mx-auto">
-            Showcasing full-stack applications built with modern frameworks, focusing on intuitive user experiences and solving real business challenges.
+        <div className="text-center md:mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
+            <span>🤝</span>
+            <span>Freelancing Since 2025</span>
+          </div>
+         
+          
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <span className="block">Freelancing Projects</span>
+            <span className="block mt-2 bg-gradient-to-r from-primary via-accent-foreground to-primary bg-clip-text text-transparent">
+              Completed for clients
+            </span>
+          </h2>
+          
+          <p className="mt-4 text-foreground/70 max-w-2xl mx-auto text-base md:text-lg">
+            Delivered a wide variety of projects for clients, from start to finish with passion and dedication.
           </p>
+          
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+              <span>💼</span>
+              <span className="font-medium">Full-Stack Dev</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+              <span>✅</span>
+              <span className="font-medium">Production Ready</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+              <span>🌐</span>
+              <span className="font-medium">Modern Stack</span>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
