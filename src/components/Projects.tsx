@@ -18,14 +18,20 @@ const projects = [
     image: "/assets/Riddle me this screenshot.png",
     tags: ["JavaScript", "Tailwind", "OOP"],
   },
-
+  // {
+  //   title: "Weather App",
+  //   description: "A clean, responsive weather application providing real-time forecasts with an intuitive user interface and smooth animations.",
+  //   link: "https://weather-app-lovat-gamma-72.vercel.app",
+  //   image: "/assets/Weather-app.png",
+  //   tags: ["Next.js", "Tailwind"],
+  // },
   {
-    title: "Weather App",
-    description: "A clean, responsive weather application providing real-time forecasts with an intuitive user interface and smooth animations.",
-    link: "https://weather-app-lovat-gamma-72.vercel.app",
-    image: "/assets/Weather-app.png",
-    tags: ["Next.js", "Tailwind"],
-  },
+    title: "DJ Website",
+    description: "A clean, responsive and modern website for a DJ to showcase their work and services plus a booking system.",
+    link: "https://www.djwilko.com",
+    image: "/assets/dj-website.png",
+    tags: ["Next.js", "Tailwind", "Prisma", "PostgreSQL", "Node.js", "Express"],
+  }
 ]
 export const Projects = () => {
   return (
@@ -34,22 +40,17 @@ export const Projects = () => {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="text-center md:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
-            <span>🤝</span>
             <span>Freelancing Since 2025</span>
           </div>
          
           
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            <span className="block">Freelancing Projects</span>
+            <span className="block"><u>Freelancing</u> projects</span>
             <span className="block mt-2 bg-gradient-to-r from-primary via-accent-foreground to-primary bg-clip-text text-transparent">
-              Completed for clients
+              completed for <u>clients</u>
             </span>
           </h2>
-          
-          <p className="mt-4 text-foreground/70 max-w-2xl mx-auto text-base md:text-lg">
-            Delivered a wide variety of projects for clients, from start to finish with passion and dedication.
-          </p>
-          
+
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
               <span>💼</span>
