@@ -57,7 +57,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status, fea
 
       <CardFooter className='px-4 py-3 border-t border-border/70 flex items-center justify-between'>
         <a href={link} target='_blank' rel='noopener' className='text-sm font-medium text-primary hover:underline underline-offset-4'>
-          Live Demo →
+          View website →
         </a>
         {status && (
           <span className={`px-2.5 py-1 text-[11px] rounded-md border 
