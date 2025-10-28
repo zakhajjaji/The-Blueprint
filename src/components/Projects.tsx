@@ -11,6 +11,13 @@ const projects = [
     image: "/assets/mortgage.suite.png",
     tags: ["NextJS","TypeScript", "MongoDB", "Insomnia", "Node.JS", "Express"],
   },
+//   {
+//     title: "AI Chatbot",
+//   description: "An AI powered chatbot built to help users with their questions and provide suggested call to actions based on the user's input.",
+//   link: "https://ai-chatbot-lovat-gamma-72.vercel.app",
+//   image: "/assets/ai-chatbot.png",
+//   tags: ["Next.js", "TypeScript", "FastAPI", "Python", "OpenAI API"],
+// },
   {
     title: "Batman vs. Riddler",
     description: "An interactive quiz game featuring iconic Batman and Riddler themes, built with vanilla JavaScript and object-oriented programming principles.",
@@ -18,13 +25,6 @@ const projects = [
     image: "/assets/Riddle me this screenshot.png",
     tags: ["JavaScript", "Tailwind", "OOP"],
   },
-  // {
-  //   title: "Weather App",
-  //   description: "A clean, responsive weather application providing real-time forecasts with an intuitive user interface and smooth animations.",
-  //   link: "https://weather-app-lovat-gamma-72.vercel.app",
-  //   image: "/assets/Weather-app.png",
-  //   tags: ["Next.js", "Tailwind"],
-  // },
   {
     title: "DJ Website",
     description: "A clean, responsive and modern website for a DJ to showcase their work and services plus a booking system.",
@@ -69,7 +69,7 @@ export const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
-            const isFeatured = index % 3 === 0; // 1 featured then 2 standard, repeat
+            const isFeatured = index % 4 === 0; // 1 featured then 2 standard, repeat
             return (
               <div key={index} className={isFeatured ? 'md:col-span-2' : ''}>
                 <ProjectCard {...project} featured={isFeatured} />
