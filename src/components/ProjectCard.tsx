@@ -12,7 +12,6 @@ import {
     link: string;
     image?: string;
     tags: string[];
-    status?: "complete" | "in-progress";
     featured?: boolean;
   };
   // added featured boolean to the projeccard to handle different image sizes for projects
@@ -21,7 +20,7 @@ import {
   import SpotlightCard from './animations/SpotlightCard';
   import Image from 'next/image';
 
-export const ProjectCard = ({ title, description, link, image, tags, status, featured }: ProjectProps) => {
+export const ProjectCard = ({ title, description, link, image, tags, featured }: ProjectProps) => {
   return (
     <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full mx-auto overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md'>
       <CardHeader className='p-0'>
@@ -59,12 +58,7 @@ export const ProjectCard = ({ title, description, link, image, tags, status, fea
         <a href={link} target='_blank' rel='noopener' className='text-sm font-medium text-primary hover:underline underline-offset-4'>
           View website →
         </a>
-        {status && (
-          <span className={`px-2.5 py-1 text-[11px] rounded-md border 
-            ${status === 'complete' ? 'border-green-300 text-green-700 bg-green-50/60' : 'border-yellow-300 text-yellow-700 bg-yellow-50/60'}`}>
-            {status === 'complete' ? 'Complete' : 'In Progress'}
-          </span>
-        )}
+        
       </CardFooter>
     </SpotlightCard>
   )
