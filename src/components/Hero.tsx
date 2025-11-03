@@ -9,7 +9,7 @@ export default function Hero() {
         className="relative mt-12 py-12 text-card-foreground"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
-          <div className="relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur py-16 md:py-24">
+          <div className="relative overflow-hidden rounded-2xl bg-background/60 backdrop-blur py-16 md:py-24">
             {/* Framed background: masked gradient + glows */}
             <div aria-hidden className="absolute inset-0 z-0 pointer-events-none">
               <div
@@ -26,6 +26,10 @@ export default function Hero() {
             </div>
 
             <div className="text-center relative z-10 px-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-secondary/10 border border-primary/20 text-sm font-medium text-secondary-foreground">
+            <span>Freelancing Since 2025</span>
+          </div>
+         
               <div className="mx-auto max-w-3xl">
                 <h1 className="text-5xl md:text-6xl font-semibold tracking-tight motion-safe:animate-in motion-safe:fade-in-50 motion-safe:slide-in-from-bottom-2">
                   Zak Hajjaji
@@ -44,10 +48,10 @@ export default function Hero() {
                   <span className="px-3 py-1 text-xs md:text-sm font-medium">Express.js</span>
                 </div>
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 motion-safe:animate-in motion-safe:fade-in-50 motion-safe:slide-in-from-bottom-2 motion-safe:delay-175">
-                  <Button size="lg" variant="outline" className="backdrop-blur-md bg-white/30 border-[rgba(var(--accent-violet),0.35)] hover:bg-white/50">
+                  <Button size="lg" variant="outline" className="backdrop-blur-md bg-white/30 border-[rgba(var(--accent-violet),0.35)] hover:bg-secondary/50">
                     <Link href="#projects">View Projects</Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="backdrop-blur-md bg-white/30 border-[rgba(var(--accent-violet),0.35)] hover:bg-white/50">
+                  <Button size="lg" variant="outline" className="backdrop-blur-md bg-white/30 border-[rgba(var(--accent-violet),0.35)] hover:bg-secondary/50">
                     <Link href="#contact">Contact Me</Link>
                   </Button>
                 </div>

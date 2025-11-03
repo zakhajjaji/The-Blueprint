@@ -46,12 +46,7 @@ export const Projects = () => {
     <section id="projects" className="pt-12 md:pt-6 pb-6 md:pb-4 text-foreground">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="text-center md:mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
-            <span>Freelancing Since 2025</span>
-          </div>
-         
-          
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             <span className="block"><u>Freelancing</u> projects</span>
             <span className="block mt-2 bg-gradient-to-r from-primary via-accent-foreground to-primary bg-clip-text text-transparent">
               completed for <u>clients</u>
