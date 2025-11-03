@@ -54,16 +54,16 @@ export const Projects = () => {
           </h2>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
-              <span>💼</span>
+            <div className="flex items-center gap-2 px-3 py-4 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+        
               <span className="font-medium">Full-Stack Dev</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
-              <span>✅</span>
+            <div className="flex items-center gap-2 px-3 py-4 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+          
               <span className="font-medium">Production Ready</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
-              <span>🌐</span>
+            <div className="flex items-center gap-2 px-3 py-4 rounded-lg bg-background/60 border border-border/70 backdrop-blur">
+        
               <span className="font-medium">Modern Stack</span>
             </div>
           </div>
