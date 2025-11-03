@@ -38,7 +38,7 @@ const testimonialsData = [
   },
   {
     id: 4,
-    quote: "Zak did a great job re-designing and rebuilding DJWilko.com for me. He improved my SEO score massicely, listened to what I wanted on the site, and added in new features all in the space of a few days. I could not be happier!",
+    quote: "Zak did a great job re-designing and rebuilding DJWilko.com for me. He improved my SEO score massively, listened to what I wanted on the site, and added in new features all in the space of a few days. I could not be happier!",
     name: "DJ Wilko",
     title: "Event DJ",
     company: "DJ Wilko",
@@ -53,7 +53,7 @@ const Testimonials = () => {
         <div className="text-center mb-10 md:mb-12">
           <h2 id="testimonials-title" className="text-3xl md:text-4xl font-semibold tracking-tight">What Clients & Peers Say</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto mt-3 md:mt-4 text-sm md:text-base">
-            A few words from people I've built with.
+            A few words from people I&apos;ve built with.
           </p>
         </div>
 
