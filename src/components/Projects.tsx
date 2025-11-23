@@ -5,6 +5,14 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
 
   {
+    title: "Mochaic ai-chatbot",
+    description: "A custom AI chatbot built as a production-ready drop-in widget for any website. Fully customisable to the brand and the website.",
+    link: "https://www.mochaic.com",
+    image: "/assets/Screenshot 2025-11-19 at 13.43.51.png",
+    tags: ["Next.js", "TypeScript", "FastAPI", "Python", "OpenAI API"],
+  },
+
+  {
     title: "Mortgage Tools",
     description: "A collection of interactive, user-friendly mortgage calculators built to support homebuyers, brokers, and property investors.",
     link: "https://mortgage-tools-fney.vercel.app",
@@ -71,7 +79,7 @@ export const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
-            const isFeatured = index % 4 === 0; // 1 featured then 2 standard, repeat
+            const isFeatured = index === 0; // First project featured, rest standard
             return (
               <div key={index} className={isFeatured ? 'md:col-span-2' : ''}>
                 <ProjectCard {...project} featured={isFeatured} />

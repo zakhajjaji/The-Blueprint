@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     default: "Zak Hajjaji - Full-Stack Developer & AI Product Builder",
     template: "%s | Zak's Blueprint"
   },
-  description: "Full-stack developer specialising in Next.js, TypeScript, and AI integrations. Building scalable web applications and AI-powered products. Explore my portfolio of projects and get in touch for collaborations.",
-  keywords: ["Full Stack Developer", "Next.js", "TypeScript", "React", "AI", "Web Developer", "Software Engineer", "Zak Hajjaji"],
+  description: "Full-stack developer specialising in Next.js, TypeScript, Python and AI integrations. Building scalable web applications and AI-powered products. Explore my portfolio of projects and get in touch for collaborations.",
+  keywords: ["Full Stack Developer", "Next.js", "TypeScript", "React", "AI", "Python", "Web Developer", "Software Engineer", "Zak Hajjaji"],
   authors: [{ name: "Zak Hajjaji" }],
   creator: "Zak Hajjaji",
   openGraph: {
