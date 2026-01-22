@@ -6,7 +6,15 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonialsData = [
   {
@@ -47,8 +55,13 @@ const testimonialsData = [
 ];
 
 const Testimonials = () => {
+  const { elementRef } = useIntersectionObserver({ threshold: 0.1 });
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   return (
-    <section id="testimonials" aria-labelledby="testimonials-title" className="py-16 px-4">
+    <section id="testimonials" ref={elementRef as React.RefObject<HTMLElement>} aria-labelledby="testimonials-title" className="py-16 px-4 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur py-6 md:py-8 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="text-center mb-10 md:mb-12">
           <h2 id="testimonials-title" className="text-3xl md:text-4xl font-semibold tracking-tight">What Clients & Peers Say</h2>
@@ -57,29 +70,41 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
-            {testimonialsData.map((t, i) => 
-            <Card
-              key={t.id}
-              className="relative h-full flex flex-col hover:shadow-md transition-shadow border border-border/70 bg-background/70 before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-0.5 before:bg-gradient-to-r before:from-primary/60 before:to-accent/60"
-            >
-              <CardHeader className="pb-2">
-                <Quote className="w-8 h-8 absolute top-6 right-6 bg-gradient-to-r from-primary/80 to-accent/80 bg-clip-text text-transparent" />
-              </CardHeader>
-              <CardContent className="flex flex-col gap-3 flex-1">
-              <div>
-                    <div className={`font-semibold text-sm inline-block px-2 py-1 rounded-md ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'}`}>{t.name}</div>
-                    <div className="text-xs text-foreground/70 mt-1">{t.title}</div>
-                    <div className="text-xs text-foreground/60">{t.company}</div>
-                    <div className="text-xs text-primary font-medium mt-1">{t.relationship}</div>
-            </div>
-                <blockquote className="text-sm leading-relaxed text-foreground/90">“{t.quote}”</blockquote>
-            </CardContent>
-
-            </Card>
-            )}
-        </div>
-       
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[plugin.current]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {testimonialsData.map((t, i) => (
+              <CarouselItem key={t.id} className="pl-2 md:pl-4 md:basis-1/2">
+                <Card className="relative h-full flex flex-col hover:shadow-md transition-shadow border border-border/70 bg-background/70 before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-0.5 before:bg-gradient-to-r before:from-primary/60 before:to-accent/60">
+                  <CardHeader className="pb-2">
+                    <Quote className="w-8 h-8 absolute top-6 right-6 bg-gradient-to-r from-primary/80 to-accent/80 bg-clip-text text-transparent" />
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-3 flex-1">
+                    <div>
+                      <div className={`font-semibold text-sm inline-block px-2 py-1 rounded-md ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'}`}>
+                        {t.name}
+                      </div>
+                      <div className="text-xs text-foreground/70 mt-1">{t.title}</div>
+                      <div className="text-xs text-foreground/60">{t.company}</div>
+                      <div className="text-xs text-primary font-medium mt-1">{t.relationship}</div>
+                    </div>
+                    <blockquote className="text-sm leading-relaxed text-foreground/90">
+                      &quot;{t.quote}&quot;
+                    </blockquote>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-12" />
+          <CarouselNext className="hidden md:flex -right-12" />
+        </Carousel>
       </div>
     </section>
   );
