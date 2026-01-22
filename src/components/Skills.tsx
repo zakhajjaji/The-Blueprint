@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef  } from "react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { gsap } from "gsap";
 
@@ -39,7 +39,6 @@ const rows: Row[] = [
 
 export default function Skills() {
   const { elementRef, hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
-  const [animatedValues, setAnimatedValues] = useState<Record<string, number>>({});
   const progressBarsRef = useRef<Map<string, HTMLDivElement>>(new Map());
 
   useEffect(() => {

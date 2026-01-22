@@ -10,7 +10,7 @@ interface UseIntersectionObserverOptions {
 export function useIntersectionObserver(
   options: UseIntersectionObserverOptions = {}
 ) {
-  const { threshold = 0.1, rootMargin = "0px", triggerOnce = false } = options;
+  const { threshold = 0.1, rootMargin = "0px"} = options;
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [hasIntersected, setHasIntersected] = useState(false);
   const elementRef = useRef<HTMLElement | null>(null);

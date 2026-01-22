@@ -8,7 +8,7 @@ export type FilterOption = {
 
 export function useFilter<T extends { tags?: string[]; category?: string }>(
   items: T[],
-  filterOptions: FilterOption[] = []
+  // filterOptions: FilterOption[] = []
 ) {
   const [selectedFilter, setSelectedFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -33,8 +33,8 @@ export function useFilter<T extends { tags?: string[]; category?: string }>(
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       result = result.filter((item) => {
-        const title = (item as any).title?.toLowerCase() || "";
-        const description = (item as any).description?.toLowerCase() || "";
+        const title = (item as unknown as { title?: string }).title?.toLowerCase() || "";
+        const description = (item as unknown as { description?: string }).description?.toLowerCase() || "";
         const tags = item.tags?.join(" ").toLowerCase() || "";
         
         return (

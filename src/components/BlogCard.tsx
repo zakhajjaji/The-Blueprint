@@ -12,7 +12,7 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const { elementRef, hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
+  const { hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
