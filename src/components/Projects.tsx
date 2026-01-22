@@ -21,7 +21,7 @@ export const Projects = () => {
     setSelectedFilter,
     searchQuery,
     setSearchQuery,
-  } = useFilter(projects, filterOptions);
+  } = useFilter(projects);
 
   return (
     <section id="projects" className="pt-12 md:pt-6 pb-6 md:pb-4 text-foreground scroll-mt-24">
