@@ -99,7 +99,7 @@ const Contact = () => {
         <p className="mt-2 text-sm md:text-base text-foreground/70">Open to collaborations, product work, and advisory. Drop a message.</p>
       </div>
 
-      <Card ref={formRef} className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 overflow-hidden rounded-2xl bg-background/60 backdrop-blur shadow-sm bg-gradient-to-b from-primary/5 to-transparent relative">
+      <Card ref={formRef} className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 overflow-hidden rounded-sm-2xl bg-background/60 backdrop-blur shadow-sm bg-gradient-to-b from-primary/5 to-transparent relative">
         <CardContent className="pt-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

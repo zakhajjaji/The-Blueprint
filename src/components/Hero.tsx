@@ -121,7 +121,7 @@ export default function Hero() {
       className="relative mt-12 py-12 text-card-foreground scroll-mt-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="relative overflow-hidden rounded-2xl bg-background/60 backdrop-blur py-16 md:py-24">
+        <div className="relative overflow-hidden rounded-sm-2xl bg-background/60 backdrop-blur py-16 md:py-24">
           {/* Framed background: masked gradient + glows */}
           <div aria-hidden className="absolute inset-0 z-0 pointer-events-none">
             <div
@@ -134,17 +134,17 @@ export default function Hero() {
             />
             <div
               ref={glow1Ref}
-              className="absolute left-1/2 top-0 h-[40vh] w-[70vw] -translate-x-1/2 rounded-full blur-2xl"
+              className="absolute left-1/2 top-0 h-[40vh] w-[70vw] -translate-x-1/2 rounded-sm-full blur-2xl"
               style={{ background: "radial-gradient(ellipse at center, rgb(var(--highlight-lilac) / 0.5), transparent 70%)" }}
             />
             <div
               ref={glow2Ref}
-              className="absolute left-[12%] top-[30%] h-56 w-56 -translate-x-1/2 rounded-full blur-2xl"
+              className="absolute left-[12%] top-[30%] h-56 w-56 -translate-x-1/2 rounded-sm-full blur-2xl"
               style={{ background: "radial-gradient(circle, rgb(var(--highlight-lilac) / 0.45), transparent 65%)" }}
             />
             <div
               ref={glow3Ref}
-              className="absolute right-[8%] top-[22%] h-48 w-48 translate-x-1/2 rounded-full blur-2xl"
+              className="absolute right-[8%] top-[22%] h-48 w-48 translate-x-1/2 rounded-sm-full blur-2xl"
               style={{ background: "radial-gradient(circle, rgb(var(--accent-violet) / 0.45), transparent 65%)" }}
             />
           </div>
@@ -152,7 +152,7 @@ export default function Hero() {
           <div className="text-center relative z-10 px-4">
             <div
               ref={badgeRef}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-secondary/10 border border-primary/20 text-sm font-medium text-secondary-foreground"
+              className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-sm-full bg-secondary/10 border border-primary/20 text-sm font-medium text-secondary-foreground"
             >
               <span>Freelancing Since 2025</span>
             </div>
@@ -174,19 +174,19 @@ export default function Hero() {
                 ref={tagsRef}
                 className="mt-10 flex flex-wrap items-center justify-center gap-2"
               >
-                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-lg border border-border/50">
+                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-sm-lg border border-border/50">
                   Next.js
                 </span>
-                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-lg border border-border/50">
+                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-sm-lg border border-border/50">
                   TypeScript
                 </span>
-                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-lg border border-border/50">
+                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-sm-lg border border-border/50">
                   FastAPI
                 </span>
-                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-lg border border-border/50">
+                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-sm-lg border border-border/50">
                   Python
                 </span>
-                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-lg border border-border/50">
+                <span className="px-3 py-1 text-xs md:text-sm font-medium bg-background/40 backdrop-blur rounded-sm-lg border border-border/50">
                   Express.js
                 </span>
               </div>

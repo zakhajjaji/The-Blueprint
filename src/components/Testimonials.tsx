@@ -62,7 +62,7 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" ref={elementRef as React.RefObject<HTMLElement>} aria-labelledby="testimonials-title" className="py-16 px-4 scroll-mt-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur py-6 md:py-8 bg-gradient-to-b from-primary/5 to-transparent">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 relative overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur py-6 md:py-8 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="text-center mb-10 md:mb-12">
           <h2 id="testimonials-title" className="text-3xl md:text-4xl font-semibold tracking-tight">What Clients & Peers Say</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto mt-3 md:mt-4 text-sm md:text-base">
@@ -87,7 +87,7 @@ const Testimonials = () => {
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3 flex-1">
                     <div>
-                      <div className={`font-semibold text-sm inline-block px-2 py-1 rounded-md ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'}`}>
+                      <div className={`font-semibold text-sm inline-block px-2 py-1 rounded-sm-md ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'}`}>
                         {t.name}
                       </div>
                       <div className="text-xs text-foreground/70 mt-1">{t.title}</div>

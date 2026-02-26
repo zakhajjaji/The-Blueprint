@@ -39,7 +39,7 @@ export function ProjectFilter({
           <button
             key={option.id}
             onClick={() => onFilterChange(option.id)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+            className={`px-4 py-2 rounded-sm-lg text-sm font-medium transition-all duration-200 ${
               selectedFilter === option.id
                 ? "bg-primary text-primary-foreground shadow-md"
                 : "bg-background/60 backdrop-blur border border-border/70 text-foreground hover:border-primary/50 hover:bg-background/80"

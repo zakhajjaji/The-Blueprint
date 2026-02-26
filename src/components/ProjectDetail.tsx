@@ -41,7 +41,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
           <div ref={contentRef} className="space-y-8">
             {project.image && (
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-border/70">
+              <div className="relative w-full aspect-video rounded-sm-2xl overflow-hidden border border-border/70">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -65,7 +65,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 rounded-full text-sm font-medium bg-accent/50 text-accent-foreground border border-accent-foreground/10"
+                  className="px-3 py-1 rounded-sm-full text-sm font-medium bg-accent/50 text-accent-foreground border border-accent-foreground/10"
                 >
                   {tag}
                 </span>

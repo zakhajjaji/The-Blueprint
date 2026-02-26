@@ -265,7 +265,7 @@ const PillNav: React.FC<PillNavProps> = ({
             ref={(el: HTMLElement | HTMLAnchorElement | null) => {
               logoRef.current = el;
             }}
-            className="rounded-xl inline-flex items-center justify-center overflow-hidden bg-background/70 backdrop-blur"
+            className="rounded-sm-xl inline-flex items-center justify-center overflow-hidden bg-background/70 backdrop-blur"
             style={{
               width: 'var(--nav-h)',
               height: 'var(--nav-h)',
@@ -282,7 +282,7 @@ const PillNav: React.FC<PillNavProps> = ({
             ref={el => {
               logoRef.current = el;
             }}
-            className="rounded-xl inline-flex items-center justify-center overflow-hidden bg-background/60 backdrop-blur"
+            className="rounded-sm-xl inline-flex items-center justify-center overflow-hidden bg-background/60 backdrop-blur"
             style={{
               width: 'var(--nav-h)',
               height: 'var(--nav-h)',
@@ -295,7 +295,7 @@ const PillNav: React.FC<PillNavProps> = ({
 
         <div
           ref={navItemsRef}
-          className="relative items-center rounded-xl hidden md:flex ml-2 border border-border/70 bg-background/60 backdrop-blur px-1"
+          className="relative items-center rounded-sm-xl hidden md:flex ml-2 border border-border/70 bg-background/60 backdrop-blur px-1"
           style={{
             height: 'var(--nav-h)'
           }}
@@ -318,7 +318,7 @@ const PillNav: React.FC<PillNavProps> = ({
               const PillContent = (
                 <>
                   <span
-                    className="hover-circle absolute left-1/2 bottom-0 rounded-2xl z-[1] block pointer-events-none"
+                    className="hover-circle absolute left-1/2 bottom-0 rounded-sm-2xl z-[1] block pointer-events-none"
                     style={{
                       background: 'var(--base, #000)',
                       willChange: 'transform'
@@ -348,7 +348,7 @@ const PillNav: React.FC<PillNavProps> = ({
                   </span>
                   {isActive && (
                     <span
-                      className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 w-3 h-3 rounded-2xl z-[4]"
+                      className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 w-3 h-3 rounded-sm-2xl z-[4]"
                       style={{ background: 'var(--base, #000)' }}
                       aria-hidden="true"
                     />
@@ -357,7 +357,7 @@ const PillNav: React.FC<PillNavProps> = ({
               );
 
               const basePillClasses =
-                'relative overflow-hidden inline-flex items-center justify-center h-full no-underline rounded-2xl box-border font-semibold text-[16px] leading-[0] normal-case tracking-[0.2px] whitespace-nowrap cursor-pointer px-0';
+                'relative overflow-hidden inline-flex items-center justify-center h-full no-underline rounded-sm-2xl box-border font-semibold text-[16px] leading-[0] normal-case tracking-[0.2px] whitespace-nowrap cursor-pointer px-0';
 
               return (
                 <li key={item.href} role="none" className="flex h-full">
@@ -402,24 +402,24 @@ const PillNav: React.FC<PillNavProps> = ({
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           aria-expanded={isMobileMenuOpen}
-          className="md:hidden rounded-xl border border-border/70 bg-background/60 backdrop-blur text-foreground flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative"
+          className="md:hidden rounded-sm-xl border border-border/70 bg-background/60 backdrop-blur text-foreground flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative"
           style={{
             width: 'var(--nav-h)',
             height: 'var(--nav-h)'
           }}
         >
           <span
-            className="hamburger-line w-4 h-0.5 rounded origin-center bg-current transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+            className="hamburger-line w-4 h-0.5 rounded-sm origin-center bg-current transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
           />
           <span
-            className="hamburger-line w-4 h-0.5 rounded origin-center bg-current transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+            className="hamburger-line w-4 h-0.5 rounded-sm origin-center bg-current transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
           />
         </button>
       </nav>
 
       <div
         ref={mobileMenuRef}
-        className="md:hidden absolute top-[3em] left-4 right-4 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] z-[998] origin-top border border-border/70 bg-background/80 backdrop-blur"
+        className="md:hidden absolute top-[3em] left-4 right-4 rounded-sm-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] z-[998] origin-top border border-border/70 bg-background/80 backdrop-blur"
         style={{
           ...cssVars,
           background: 'var(--background)'
@@ -441,7 +441,7 @@ const PillNav: React.FC<PillNavProps> = ({
             };
 
             const linkClasses =
-              'block py-3 px-4 text-[16px] font-medium rounded-2xl transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]';
+              'block py-3 px-4 text-[16px] font-medium rounded-sm-2xl transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]';
 
             return (
               <li key={item.href}>

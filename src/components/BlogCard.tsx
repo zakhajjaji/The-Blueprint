@@ -29,10 +29,10 @@ export function BlogCard({ post }: BlogCardProps) {
     <Link href={`/blog/${post.slug}`}>
       <div
         ref={cardRef}
-        className="group relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+        className="group relative overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur p-6 hover:border-primary/50 transition-all hover:shadow-lg"
       >
         {post.featured && (
-          <div className="absolute top-4 right-4 px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded">
+          <div className="absolute top-4 right-4 px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-sm">
             Featured
           </div>
         )}
@@ -55,7 +55,7 @@ export function BlogCard({ post }: BlogCardProps) {
             <Clock className="w-3 h-3" />
             {post.readTime} min read
           </div>
-          <span className="px-2 py-1 bg-accent/50 rounded text-xs">
+          <span className="px-2 py-1 bg-accent/50 rounded-sm text-xs">
             {post.category}
           </span>
         </div>

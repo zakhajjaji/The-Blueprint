@@ -98,7 +98,7 @@ export const ProjectCard = ({ title, description, link, image, tags, featured, s
       className="transition-transform duration-200 ease-out"
       style={{ transformStyle: 'preserve-3d' }}
     >
-      <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full mx-auto overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur transition-all duration-300 hover:shadow-xl hover:border-primary/50'>
+      <SpotlightCard className='w-full max-w-sm sm:max-w-md md:max-w-full mx-auto overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur transition-all duration-300 hover:shadow-xl hover:border-primary/50'>
         <CardHeader className='p-0'>
           {image && (
             <div 
@@ -136,7 +136,7 @@ export const ProjectCard = ({ title, description, link, image, tags, featured, s
             {tags.map(tag => (
               <span 
                 key={tag} 
-                className='px-2.5 py-1 rounded-full text-[14px] font-medium bg-accent/50 text-accent-foreground border border-accent-foreground/10 hover:bg-accent/70 hover:border-primary/50 transition-all duration-200 hover:scale-105'
+                className='px-2.5 py-1 rounded-sm-full text-[14px] font-medium bg-accent/50 text-accent-foreground border border-accent-foreground/10 hover:bg-accent/70 hover:border-primary/50 transition-all duration-200 hover:scale-105'
               >
                 {tag}
               </span>

@@ -66,7 +66,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <Clock className="w-4 h-4" />
               {post.readTime} min read
             </div>
-            <span className="px-2 py-1 bg-accent/50 rounded text-xs">
+            <span className="px-2 py-1 bg-accent/50 rounded-sm text-xs">
               {post.category}
             </span>
           </div>

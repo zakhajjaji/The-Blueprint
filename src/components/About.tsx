@@ -85,7 +85,7 @@ export default function About() {
         </div>
 
         <div ref={bioRef} className="mb-16">
-          <div className="relative overflow-hidden rounded-2xl border border-border/70 bg-background/60 backdrop-blur p-8 md:p-12">
+          <div className="relative overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur p-8 md:p-12">
             <div className="prose prose-sm md:prose-base max-w-none">
               <p className="text-foreground/90 leading-relaxed mb-4">
                 I&apos;m a full-stack developer specialising in building scalable web applications
@@ -111,7 +111,7 @@ export default function About() {
                   key={index}
                   className="relative pl-12 pb-8 border-l-2 border-primary/30 last:border-l-0 last:pb-0"
                 >
-                  <div className="absolute -left-[15px] top-0 w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                  <div className="absolute -left-[15px] top-0 w-8 h-8 rounded-sm-full bg-primary/20 border-2 border-primary flex items-center justify-center">
                     <Icon className="w-4 h-4 text-primary" />
                   </div>
                   <div className="text-sm font-mono text-primary/70 mb-1">{item.year}</div>
@@ -132,7 +132,7 @@ export default function About() {
             {interests.map((interest, index) => (
               <div
                 key={index}
-                className="p-4 rounded-lg border border-border/70 bg-background/60 backdrop-blur hover:border-primary/50 transition-colors"
+                className="p-4 rounded-sm-lg border border-border/70 bg-background/60 backdrop-blur hover:border-primary/50 transition-colors"
               >
                 <p className="text-foreground/90 text-center">{interest}</p>
               </div>

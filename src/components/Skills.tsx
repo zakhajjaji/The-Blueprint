@@ -107,7 +107,7 @@ export default function Skills() {
                     <div
                       key={item.name}
                       data-skill-card
-                      className="rounded-md border border-border/70 p-4 bg-background/60 backdrop-blur hover:border-primary/50 transition-colors group"
+                      className="rounded-sm-md border border-border/70 p-4 bg-background/60 backdrop-blur hover:border-primary/50 transition-colors group"
                     >
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-sm font-medium group-hover:text-primary transition-colors">
@@ -117,12 +117,12 @@ export default function Skills() {
                           {item.value}%
                         </span>
                       </div>
-                      <div className="h-2 w-full rounded-full bg-[rgba(var(--highlight-lilac),0.35)] overflow-hidden">
+                      <div className="h-2 w-full rounded-sm-full bg-[rgba(var(--highlight-lilac),0.35)] overflow-hidden">
                         <div
                           ref={(el) => {
                             if (el) progressBarsRef.current.set(key, el);
                           }}
-                          className="h-2 rounded-full bg-[rgb(var(--accent-violet))] transition-all duration-300"
+                          className="h-2 rounded-sm-full bg-[rgb(var(--accent-violet))] transition-all duration-300"
                           style={{ width: hasIntersected ? `${item.value}%` : "0%" }}
                         />
                       </div>

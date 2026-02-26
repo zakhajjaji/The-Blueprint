@@ -13,7 +13,7 @@ export default function CustomCursor() {
     },[])
     return(
         <div
-        className="pointer-events-none fixed rounded-full top-0 left-0 z-50 h-50 w-50 bg-background-400/20 dark:bg-accent-400/20 blur-xl mix-blend-difference shadow-[0_0_30px_rgba(255,165,0,0.15)] transition-transform duration-75 ease-out will-change-transform"
+        className="pointer-events-none fixed rounded-sm-full top-0 left-0 z-50 h-50 w-50 bg-background-400/20 dark:bg-accent-400/20 blur-xl mix-blend-difference shadow-[0_0_30px_rgba(255,165,0,0.15)] transition-transform duration-75 ease-out will-change-transform"
         style={{transform: `translate3d(${pos.x -40}px, ${pos.y -40}px, 0)`,}}/>
     )
 }

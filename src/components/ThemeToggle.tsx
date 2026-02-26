@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       variant="outline"
       size="sm"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="h-8 px-3 rounded-xl border-border/70 bg-background/60 backdrop-blur text-foreground hover:bg-muted"
+      className="h-8 px-3 rounded-sm-xl border-border/70 bg-background/60 backdrop-blur text-foreground hover:bg-muted"
       aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
     >
       <span className="font-mono text-xs">
