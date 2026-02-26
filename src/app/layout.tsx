@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Zak Hajjaji - Full-Stack Developer & AI Product Builder",
+    default: "Zak Hajjaji | Full-Stack Developer | AI Product Builder",
     template: "%s | Zak's Blueprint"
   },
   description: "Full-stack developer specialising in Next.js, TypeScript, Python and AI integrations. Building scalable web applications and AI-powered products. Explore my portfolio of projects and get in touch for collaborations.",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://zakblueprint.com",
-    title: "Zak Hajjaji - Full-Stack Developer & AI Product Builder",
+    title: "Zak Hajjaji | Full-Stack Developer | AI Product Builder",
     description: "Full-stack developer specializing in Next.js, TypeScript, and AI integrations. Building scalable web applications and AI-powered products.",
     siteName: "Zak's Blueprint",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zak Hajjaji - Full-Stack Developer & AI Product Builder",
+    title: "Zak Hajjaji | Full-Stack Developer | AI Product Builder",
     description: "Full-stack developer specializing in Next.js, TypeScript, and AI integrations.",
   },
   robots: {
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/zakblueprint.ico", type: "image/x-icon" },
-      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/assets/favicon.ico", type: "image/x-icon" },
+      { url: "/assets/favicon.ico", type: "image/ico" },
     ],
   },
 };
