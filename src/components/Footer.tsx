@@ -11,12 +11,12 @@ const Footer = () => {
           <div className="relative flex flex-col items-center gap-4 text-center px-4">
             <div className="font-mono text-md tracking-wide text-foreground">The Polished Creator</div>
             <p className="text-sm text-foreground/80">
-              © {new Date().getFullYear()} Zak Hajjaji - Built with Next.js, TypeScript, and thoughtful design.
+              © {new Date().getFullYear()} Zak Hajjaji | Full-Stack Developer | AI Product Builder | Built with Next.js, TypeScript, and thoughtful design.
             </p>
             <div className="flex items-center gap-10 text-sm">
               <Link href="#projects" className="text-foreground/80 hover:text-foreground underline-offset-4 hover:underline">Projects</Link>
               <Link href="#contact" className="text-foreground/80 hover:text-foreground underline-offset-4 hover:underline">Contact</Link>
-              <a href="/assets/ZAK-HAJJAJI-JNR.SOFTWARE-DEV-CV.pdf" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-foreground underline-offset-4 hover:underline">CV</a>
+            {/*   <a href="/assets/ZAK-HAJJAJI-JNR.SOFTWARE-DEV-CV.pdf" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-foreground underline-offset-4 hover:underline">CV</a> */}
             </div>
           </div>
         </div>
