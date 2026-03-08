@@ -36,7 +36,7 @@ Before anything else, make sure Node.js is installed on your system (terminal). 
 node -v
 \`\`\`
 
-If it's not installed, download it from the official Node.js website. It can come across as daunting and slightly complicated, so make sure you have a youtube video at hand or maybe ChatGPT can be your guide.
+If it is not installed, download it from the official Node.js website. If you are new to the process, a quick YouTube walkthrough or even ChatGPT can help guide you through the installation.
 
 ### Step 2: Create a Next.js Project
 
@@ -123,7 +123,7 @@ This makes it intuitive and easy to scale as projects grow. Keep it as clean as 
 
 ## My first git experience (walking into the unknown)
 
-Before building projects like this, there was another tool I had to learn first: Git. And if I'm honest, the first time installing Git felt like walking into the unknown. Maybe the matrix, or wandering into Batman's bat-cave. I remember setting up my first repository and thinking:
+Before building projects like this, there was another tool I had to learn first: Git. And if I'm honest, the first time installing Git felt like walking into the unknown. Maybe the matrix, or wandering into Batman's bat-cave. I remember setting up my first repository and thinking what most developers probably think the first time they touch Git:
 
 "I have no idea what I'm doing here."
 
