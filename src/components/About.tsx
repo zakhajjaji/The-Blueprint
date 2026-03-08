@@ -88,14 +88,14 @@ export default function About() {
           <div className="relative overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur p-8 md:p-12">
             <div className="prose prose-sm md:prose-base max-w-none">
               <p className="text-foreground/90 leading-relaxed mb-4">
-                I&apos;m a full-stack developer specialising in building scalable web applications
-                and AI-powered products. With a focus on modern technologies like Next.js, TypeScript,
-                and Python, I create production-ready solutions that solve real-world problems.
+                I&apos;m a full-stack developer and love building scalable web applications and AI-powered products.
+                With a focus on modern technologies like Next.js, TypeScript, Express.js, and Python.
+                I enjoy creating production-ready solutions that solve real-world problems.
               </p>
               <p className="text-foreground/90 leading-relaxed">
                 When I&apos;m not coding, I enjoy exploring new technologies, contributing to open-source
                 projects, and continuously learning to stay at the forefront of web development. 
-                I also enjoy playing football, going to the gym, going for big walksand watching movies.
+                I also enjoy playing football, going to the gym, going for big walks and watching movies.
               </p>
             </div>
           </div>

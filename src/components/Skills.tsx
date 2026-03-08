@@ -113,9 +113,9 @@ export default function Skills() {
                         <span className="text-sm font-medium group-hover:text-primary transition-colors">
                           {item.name}
                         </span>
-                        <span className="text-sm text-foreground/70 font-mono">
+                      {/*  <span className="text-sm text-foreground/70 font-mono">
                           {item.value}%
-                        </span>
+                        </span>*/}
                       </div>
                       <div className="h-2 w-full rounded-sm-full bg-[rgba(var(--highlight-lilac),0.35)] overflow-hidden">
                         <div

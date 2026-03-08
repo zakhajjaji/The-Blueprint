@@ -5,10 +5,10 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { gsap } from "gsap";
 
 const stats = [
-  { label: "Commits", value: "1000+" },
+  { label: "Commits", value: "2000+" },
   { label: "SaaS tools", value: "6" },
   { label: "AI integrations", value: "5" },
-  { label: "Growing Brand", value: "3" },
+  { label: "Growing Brands", value: "3" },
 ];
 
 export default function Stats() {
