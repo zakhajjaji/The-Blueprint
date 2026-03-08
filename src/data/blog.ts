@@ -36,7 +36,7 @@ Before anything else, make sure Node.js is installed on your system (terminal). 
 node -v
 \`\`\`
 
-If it's not installed, download it from the official Node.js website. It can be daunting and complicated, so make sure you have a youtube video at hand or maybe ChatGPT can be your guide.
+If it's not installed, download it from the official Node.js website. It can come across as daunting and slightly complicated, so make sure you have a youtube video at hand or maybe ChatGPT can be your guide.
 
 ### Step 2: Create a Next.js Project
 
