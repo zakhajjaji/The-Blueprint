@@ -1,6 +1,8 @@
 import { blogPosts } from "@/data/blog";
 import { BlogCard } from "@/components/BlogCard";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog | Zak's Blueprint",
@@ -14,9 +16,16 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen w-full text-foreground">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-16">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground mb-10 transition-colors text-sm"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Home
+        </Link>
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Blog
+            Blog Posts
           </h1>
           <p className="text-lg text-foreground/70">
             Articles and insights about web development, AI and other modern technologies

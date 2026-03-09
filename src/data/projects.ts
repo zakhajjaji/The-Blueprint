@@ -86,5 +86,16 @@ export const projects: Project[] = [
     date: "2025-05-20",
     slug: "batman-vs-riddler-game",
   },
-  
+  {
+    id: "7",
+    title: "Next.js Starter Kit",
+    description: "A starter kit to get you started with a modern web application with Next.js, TypeScript, Tailwind CSS and Shadcn UI.",
+    link: "https://github.com/zakhajjaji/Next-js-Clerk-Prisma-Shadcn-Starter-Kit",
+    image: "",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Clerk", "Prisma"],
+    category: "fullstack",
+    featured: false,
+    date: "2026-03-09",
+    slug: "next-js-starter-kit",
+  },
 ];
