@@ -24,17 +24,17 @@ const rows: Row[] = [
   { label: "AI / ML", items: [
     { name: "OpenAI API", value: 90 },
     { name: "Prompt Engineering", value: 85 },
-    { name: "LangChain", value: 70 },
+    // { name: "LangChain", value: 70 },
   ]},
   { label: "Dev Tools", items: [
     { name: "Git / GitHub", value: 95 },
-    { name: "Docker", value: 75 },
+    // { name: "Docker", value: 75 },
     { name: "Vercel / Render", value: 90 },
   ]},
-  { label: "Design / UX", items: [
-    { name: "Figma", value: 80 },
-    { name: "Notion", value: 85 },
-  ]},
+  // { label: "Design / UX", items: [
+  //   { name: "Figma", value: 80 },
+  //   { name: "Notion", value: 85 },
+  // ]},
 ];
 
 export default function Skills() {
