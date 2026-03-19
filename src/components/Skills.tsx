@@ -9,12 +9,15 @@ const rows: Row[] = [
   { label: "Frontend", items: [
     { name: "Next.js", value: 95 },
     { name: "React", value: 90 },
-    { name: "TailwindCSS", value: 90 },
+    { name: "TypeScript", value: 100 },
+    { name: "JavaScript", value: 90 },
+    { name: "TailwindCSS", value: 90 },  
   ]},
   { label: "Backend", items: [
     { name: "FastAPI", value: 85 },
     { name: "Node.js", value: 80 },
-    { name: "Prisma", value: 75 },
+    { name: "Prisma", value: 70 },
+    { name: "Python", value: 75 },
   ]},
   { label: "Databases", items: [
     { name: "PostgreSQL", value: 85 },
