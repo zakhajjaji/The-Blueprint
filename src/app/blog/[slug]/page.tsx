@@ -34,30 +34,32 @@ export async function generateMetadata({
 
 const markdownComponents = {
   p: ({ children }: { children?: React.ReactNode }) => (
-    <p className="text-foreground/85 leading-[1.7] text-[15px] md:text-base mb-6 last:mb-0">
+    <p className="mb-6 text-pretty text-[15px] leading-[1.75] text-foreground/[0.88] last:mb-0 md:text-[1.0625rem]">
       {children}
     </p>
   ),
   h2: ({ children }: { children?: React.ReactNode }) => (
-    <h2 className="text-xl font-semibold text-foreground mt-10 mb-4 first:mt-0">
+    <h2 className="scroll-mt-24 text-[1.2rem] md:text-2xl font-semibold tracking-tight text-foreground mt-14 mb-6 pb-3 first:mt-0 first:pt-0">
       {children}
     </h2>
   ),
   h3: ({ children }: { children?: React.ReactNode }) => (
-    <h3 className="text-base font-semibold text-foreground mt-8 mb-3">
+    <h3 className="scroll-mt-24 text-base md:text-lg font-semibold text-foreground mt-10 mb-4 text-balance">
       {children}
     </h3>
   ),
   ul: ({ children }: { children?: React.ReactNode }) => (
-    <ul className="list-none my-6 space-y-2 text-foreground/85 text-[15px] md:text-base leading-[1.7]">
+    <ul className="my-8 space-y-3 pl-5 text-[15px] md:text-[1.0625rem] leading-[1.75] text-foreground/[0.88] list-disc marker:text-primary/55">
       {children}
     </ul>
   ),
+  ol: ({ children }: { children?: React.ReactNode }) => (
+    <ol className="my-8 list-decimal space-y-3 pl-5 text-[15px] md:text-[1.0625rem] leading-[1.75] text-foreground/[0.88] marker:text-primary/55">
+      {children}
+    </ol>
+  ),
   li: ({ children }: { children?: React.ReactNode }) => (
-    <li className="flex gap-2">
-      <span className="text-foreground/50">·</span>
-      <span>{children}</span>
-    </li>
+    <li className="pl-1 [&>p]:mb-2 [&>p]:last:mb-0">{children}</li>
   ),
   code: ({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) => {
     const isBlock = className?.includes("language-");
@@ -95,27 +97,36 @@ const markdownComponents = {
   strong: ({ children }: { children?: React.ReactNode }) => (
     <strong className="font-semibold text-foreground">{children}</strong>
   ),
+  em: ({ children }: { children?: React.ReactNode }) => (
+    <em className="italic text-foreground/[0.88]">{children}</em>
+  ),
+  blockquote: ({ children }: { children?: React.ReactNode }) => (
+    <blockquote className="my-8 border-l-[3px] border-primary/35 bg-muted/50 py-4 pl-5 pr-4 text-[15px] md:text-[1.0625rem] leading-[1.75] text-foreground/[0.88]">
+      {children}
+    </blockquote>
+  ),
+  hr: () => <hr className="my-12 border-0 border-t border-border/70" />,
   table: ({ children }: { children?: React.ReactNode }) => (
-    <div className="my-8 w-full overflow-x-auto rounded-sm border border-border/70 bg-background/40">
-      <table className="w-full min-w-[520px] border-collapse text-left text-[14px] md:text-[15px]">
+    <div className="my-10 w-full overflow-x-auto border border-border/60 bg-card/50 shadow-sm ring-1 ring-border/30">
+      <table className="w-full min-w-[min(100%,560px)] border-collapse text-left text-[13px] md:text-[14px]">
         {children}
       </table>
     </div>
   ),
   thead: ({ children }: { children?: React.ReactNode }) => (
-    <thead className="border-b border-border/70 bg-foreground/[0.04]">{children}</thead>
+    <thead className="bg-muted/60">{children}</thead>
   ),
-  tbody: ({ children }: { children?: React.ReactNode }) => <tbody>{children}</tbody>,
+  tbody: ({ children }: { children?: React.ReactNode }) => <tbody className="[&_tr:nth-child(even)]:bg-foreground/[0.02]">{children}</tbody>,
   tr: ({ children }: { children?: React.ReactNode }) => (
-    <tr className="border-b border-border/50 last:border-0">{children}</tr>
+    <tr className="border-b border-border/40 transition-colors hover:bg-foreground/[0.03] last:border-0">{children}</tr>
   ),
   th: ({ children }: { children?: React.ReactNode }) => (
-    <th className="px-3 py-2.5 font-semibold text-foreground align-top first:pl-4 last:pr-4 md:first:pl-5 md:last:pr-5">
+    <th className="px-3 py-3 font-semibold text-foreground align-top first:pl-4 last:pr-4 md:px-4 md:first:pl-5 md:last:pr-5 first:font-mono first:text-[12px] first:tracking-wide first:text-foreground/75">
       {children}
     </th>
   ),
   td: ({ children }: { children?: React.ReactNode }) => (
-    <td className="px-3 py-2.5 text-foreground/85 align-top first:pl-4 last:pr-4 md:first:pl-5 md:last:pr-5">
+    <td className="px-3 py-3 text-foreground/[0.88] align-top first:pl-4 last:pr-4 md:px-4 md:first:pl-5 md:last:pr-5 first:font-mono first:text-[12px] md:first:text-[13px] first:tracking-tight">
       {children}
     </td>
   ),
@@ -131,37 +142,41 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <div className="min-h-screen w-full text-foreground">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-24">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground mb-10 transition-colors text-sm"
+          className="inline-flex items-center gap-2 text-foreground/55 hover:text-foreground hover:bg-foreground/[0.04] -ml-2 px-2 py-1.5 mb-8 md:mb-10 transition-colors text-sm"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4 shrink-0" />
           Back to Blog
         </Link>
 
-        <article>
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6">
-            {post.title}
-          </h1>
-          <div className="flex items-center gap-6 text-sm text-foreground/50 mb-10">
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" />
-              {new Date(post.date).toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              })}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" />
-              {post.readTime} min read
-            </span>
-            <span className="text-foreground/50">{post.category}</span>
-          </div>
+        <article className="bg-card/40 px-5 py-8 ring-1 ring-border/30 sm:px-8 sm:py-10 md:px-10 md:py-12">
+          <header className="mb-10 md:mb-12">
+            <h1 className="text-balance text-3xl md:text-[2.35rem] md:leading-[1.2] font-semibold tracking-tight text-foreground mb-6">
+              {post.title}
+            </h1>
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-sm">
+              <span className="inline-flex items-center gap-1.5 bg-background/80 px-3 py-1 text-foreground/65">
+                <Calendar className="w-3.5 h-3.5 shrink-0 opacity-70" />
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-background/80 px-3 py-1 text-foreground/65">
+                <Clock className="w-3.5 h-3.5 shrink-0 opacity-70" />
+                {post.readTime} min read
+              </span>
+              <span className="inline-flex items-center border border-primary/20 bg-primary/[0.08] px-3 py-1 text-primary/90 font-medium">
+                {post.category}
+              </span>
+            </div>
+          </header>
 
           {post.content ? (
-            <div className="blog-content">
+            <div className="blog-content pt-10 md:pt-12 [&>*:first-child]:mt-0">
               <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>

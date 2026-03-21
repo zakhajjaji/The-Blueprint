@@ -174,3 +174,33 @@ html {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Blog post markdown: inline `code` (backticks) — override utility classes on <code> without editing TSX class names */
+.blog-content code {
+  font-family: var(--font-mono), ui-monospace, monospace !important;
+  font-size: 0.84em !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  padding: 0.2em 0.48em !important;
+  border-radius: 0.35em !important;
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border)) !important;
+  background: color-mix(in srgb, var(--primary) 12%, var(--card)) !important;
+  color: color-mix(in srgb, var(--foreground) 88%, var(--primary)) !important;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 55%, transparent) !important;
+}
+
+.dark .blog-content code {
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 8%, transparent) !important;
+}
+
+.blog-content pre code {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
