@@ -33,16 +33,16 @@ export default function BlogPage() {
         </div>
 
         {featuredPost && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">Featured</h2>
+          <div className="mb-14 md:mb-16">
+            <h2 className="mb-6 text-2xl font-semibold tracking-tight">Featured</h2>
             <BlogCard post={featuredPost} />
           </div>
         )}
 
         {otherPosts.length > 0 && (
           <div>
-            <h2 className="text-2xl font-semibold mb-6">All Posts</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 className="mb-6 text-2xl font-semibold tracking-tight">All Posts</h2>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-7">
               {otherPosts.map((post) => (
                 <BlogCard key={post.slug} post={post} />
               ))}

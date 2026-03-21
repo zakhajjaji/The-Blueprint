@@ -26,36 +26,56 @@ export function BlogCard({ post }: BlogCardProps) {
   }, [hasIntersected]);
 
   return (
-    <Link href={`/blog/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`} className="block h-full w-full min-w-0">
       <div
         ref={cardRef}
-        className="group relative overflow-hidden rounded-sm-2xl border border-border/70 bg-background/60 backdrop-blur p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+        className={`w-full group relative flex flex-col overflow-hidden border bg-card/50 p-6 shadow-sm ring-1 ring-border/40 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:ring-primary/15 md:p-7 ${
+          post.featured
+            ? "border-primary/25 bg-gradient-to-br from-card via-card to-primary/[0.07] ring-primary/20 md:p-8"
+            : "border-border/70 backdrop-blur-sm"
+        }`}
       >
         {post.featured && (
-          <div className="absolute top-4 right-4 px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-sm">
+          <div className="absolute right-4 top-4 border border-primary/25 bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
             Featured
           </div>
         )}
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+        <h3
+          className={`mb-3 font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary underline ${
+            post.featured ? "pr-20 text-xl md:text-2xl" : "text-lg md:text-xl"
+          }`}
+        >
           {post.title}
         </h3>
-        <p className="text-foreground/70 text-sm mb-4 line-clamp-2">
+        <p className="mb-5 line-clamp-3 flex-1 text-sm leading-relaxed text-foreground/70">
           {post.description}
         </p>
-        <div className="flex items-center gap-4 text-xs text-foreground/60">
-          <div className="flex items-center gap-1">
-            <Calendar className="w-3 h-3" />
+        {post.tags && post.tags.length > 0 && (
+          <div className="mb-5 flex flex-wrap gap-1.5">
+            {post.tags.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center border border-border/50 bg-background/70 px-2 py-0.5 text-[11px] text-foreground/60"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+        <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-border/40 pt-4 text-xs text-foreground/55">
+          <span className="inline-flex items-center gap-1 bg-muted/60 px-2 py-1">
+            <Calendar className="h-3 w-3 shrink-0 opacity-70" />
             {new Date(post.date).toLocaleDateString("en-US", {
               month: "short",
               day: "numeric",
               year: "numeric",
             })}
-          </div>
-          <div className="flex items-center gap-1">
-            <Clock className="w-3 h-3" />
+          </span>
+          <span className="inline-flex items-center gap-1 bg-muted/60 px-2 py-1">
+            <Clock className="h-3 w-3 shrink-0 opacity-70" />
             {post.readTime} min read
-          </div>
-          <span className="px-2 py-1 bg-accent/50 rounded-sm text-xs">
+          </span>
+          <span className="inline-flex items-center border border-primary/15 bg-primary/[0.08] px-2 py-1 font-medium text-primary/90">
             {post.category}
           </span>
         </div>
