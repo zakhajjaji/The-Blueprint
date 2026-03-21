@@ -39,10 +39,22 @@ export function BlogCard({ post }: BlogCardProps) {
         <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
           {post.title}
         </h3>
-        <p className="text-foreground/70 text-sm mb-4 line-clamp-2">
+        <p className="text-foreground/70 text-sm mb-4 line-clamp-3">
           {post.description}
         </p>
-        <div className="flex items-center gap-4 text-xs text-foreground/60">
+        {post.tags && post.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {post.tags.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center rounded-sm border border-border/60 bg-foreground/[0.03] px-2 py-0.5 text-[11px] text-foreground/65"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-foreground/60">
           <div className="flex items-center gap-1">
             <Calendar className="w-3 h-3" />
             {new Date(post.date).toLocaleDateString("en-US", {

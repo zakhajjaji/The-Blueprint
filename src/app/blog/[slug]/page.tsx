@@ -95,6 +95,30 @@ const markdownComponents = {
   strong: ({ children }: { children?: React.ReactNode }) => (
     <strong className="font-semibold text-foreground">{children}</strong>
   ),
+  table: ({ children }: { children?: React.ReactNode }) => (
+    <div className="my-8 w-full overflow-x-auto rounded-sm border border-border/70 bg-background/40">
+      <table className="w-full min-w-[520px] border-collapse text-left text-[14px] md:text-[15px]">
+        {children}
+      </table>
+    </div>
+  ),
+  thead: ({ children }: { children?: React.ReactNode }) => (
+    <thead className="border-b border-border/70 bg-foreground/[0.04]">{children}</thead>
+  ),
+  tbody: ({ children }: { children?: React.ReactNode }) => <tbody>{children}</tbody>,
+  tr: ({ children }: { children?: React.ReactNode }) => (
+    <tr className="border-b border-border/50 last:border-0">{children}</tr>
+  ),
+  th: ({ children }: { children?: React.ReactNode }) => (
+    <th className="px-3 py-2.5 font-semibold text-foreground align-top first:pl-4 last:pr-4 md:first:pl-5 md:last:pr-5">
+      {children}
+    </th>
+  ),
+  td: ({ children }: { children?: React.ReactNode }) => (
+    <td className="px-3 py-2.5 text-foreground/85 align-top first:pl-4 last:pr-4 md:first:pl-5 md:last:pr-5">
+      {children}
+    </td>
+  ),
 };
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
