@@ -30,7 +30,7 @@ AI tools are impressive individually, yet businesses operate through specific pr
 
 My approach was to engineer a scalable, adaptable, and streamlined chatbot equipped with a sophisticated AI framework, enabling SMEs to seamlessly integrate a production-grade chatbot into their operations. It can be used for internal workflows or customer experiences on their website. The main objective is to deliver accurate and timely information to the right users, connecting the power of AI for continuous around-the-clock support.
 
-Mochaic is a small monorepo: a Next.js web app (\`apps/web/mochaic-chatbot\`) talks to a FastAPI API (\`apps/api\`). The browser never calls the Python service directly with secrets; instead, it posts to a same-origin Next.js route (\`/api/chat\`), which forwards the payload to the backend with an API key header. The backend validates that key, applies rate limits and input bounds, and then calls OpenAI and returns the updated conversation. Company-specific copy for the system prompt can live in SQLAlchemy-backed storage (SQLite by default; PostgreSQL via \`DATABASE_URL\`).
+[Mochaic](https://www.mochaic.com) is a small monorepo: a Next.js web app (\`apps/web/mochaic-chatbot\`) talks to a FastAPI API (\`apps/api\`). The browser never calls the Python service directly with secrets; instead, it posts to a same-origin Next.js route (\`/api/chat\`), which forwards the payload to the backend with an API key header. The backend validates that key, applies rate limits and input bounds, and then calls OpenAI and returns the updated conversation. Company-specific copy for the system prompt can live in SQLAlchemy-backed storage (SQLite by default; PostgreSQL via \`DATABASE_URL\`).
 
 ### Repository layout and responsibilities:
 
